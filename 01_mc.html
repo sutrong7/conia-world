@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta content='width=device-width, initial-scale=1.0' ,minimum-scale='0,maximum-scale=10,user-scalable=yes"'
+          name='viewport'>
+    <title>마켓 크리에이터</title>
+    <link href='resources/fonts/pretendard.css' rel='stylesheet'>
+    <link href='resources/css/swiper.css' rel='stylesheet'>
+    <link href='resources/css/jquery.simplyscroll.css' rel='stylesheet'>
+    <link href='resources/css/common.css' rel='stylesheet'>
+    <link href='resources/css/sub.css' rel='stylesheet'>
+    <link href='resources/css/modal.css' rel='stylesheet'>
+    <script src='resources/js/jquery-1.9.1.min.js' type='text/javascript'></script>
+    <script type='text/javascript' src='resources/js/jquery-ui.min.js'></script>
+    <script src='resources/js/common.js' type='text/javascript'></script>
+    <script src='resources/js/gsap.js'></script>
+    <script src='resources/js/ScrollTrigger.min.js'></script>
+    <script src='resources/js/jquery.simplyscroll.min.js'></script>
+
+
+    <script>
+        $(function () {
+            $('.left .roller').simplyScroll({
+                pauseOnHover: false,
+                speed: 1,
+            });
+            $('.right .roller').simplyScroll({
+                pauseOnHover: false,
+                direction: 'backwards',
+                speed: 1,
+            });
+        });
+    </script>
+</head>
+<body>
+<div class='wrap sub'>
+
+    <!-- PC GNB -->
+    <header class='header'>
+        <div class='header_wrap container cl'>
+            <div class='main_logo lt'>
+                <a href='00_main.html' class='logo'><span class='blind'>코니아월드 로고</span></a>
+            </div>
+            <ul class='gnb'>
+                <li><a href='01_mc.html'>마켓 크리에이터</a></li>
+                <li><a href='02_pa.html'>파트너</a></li>
+                <li><a href='03_cc.html'>콘텐츠 크리에이터</a></li>
+                <li><a href='04_humanSolution.html'>휴먼&솔루션</a></li>
+            </ul>
+            <div class='btn_wrap rt'>
+                <span class='gnb_btn ico_menu'></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- MO GNB -->
+    <aside class='mo_header'>
+        <div class='header_wrap container'>
+            <div class='header_inner cl'>
+                <div class='main_logo lt'><a href='#' class='main_logo'><span class='blind'>코니아월드 로고</span></a></div>
+                <div class='btn_wrap rt'>
+                    <button class='btn_close gnb_btn ico_close'></button>
+                </div>
+            </div>
+            <ul class='gnb'>
+                <li><a href='01_mc.html'>마켓 크리에이터</a></li>
+                <li><a href='02_pa.html'>파트너</a></li>
+                <li><a href='03_cc.html'>콘텐츠 크리에이터</a></li>
+                <li><a href='04_humanSolution.html'>휴먼&솔루션</a></li>
+            </ul>
+        </div>
+    </aside>
+
+
+    <main class='mc'>
+        <div class='title_wrap container'>
+            <p>마켓 크리에이터</p>
+            <h1 class='main_tit'>당신에게 딱 맞는<br/>
+                비즈니스 파트너, 코니아입니다.</h1>
+        </div>
+
+        <!-- LOGIN -->
+        <section class='main_con login'>
+            <div class='container'>
+                <div class='con_wrap'>
+                    <h2 class='main_tit'>나의 라이프
+                        코니아를 만나면
+                        돈이 됩니다.
+                    </h2>
+                    <p class='sub_tit'>
+                        무자본, 무비용으로!<br/>
+                        나만의 셀렉샵이 완성되는 코니아,<br/>
+                        지금 시작해보세요.
+                    </p>
+                    <button class='btn btn_black'>기존 MC회원 로그인</button>
+                </div>
+            </div>
+        </section>
+        <!--// LOGIN -->
+
+        <!-- EXPERIENCE -->
+        <section class='main_con experience'>
+            <div class='container center'>
+                <div class='con_wrap'>
+                    <h2 class='main_tit'>코니아를 선택해야 하는 결정적 이유</h2>
+                    <p class='sub_tit'>
+                        도메인, 서버, 상품소싱, 배송 비용은<br/>
+                        전부 코니아가 해결할께요.
+                    </p>
+                    <div class='info_wrap'>
+                        <span class='circle'>제품 사입</span>
+                        <span class='ico ico_plus'></span>
+                        <span class='circle'>몰 구축/운영 비용</span>
+                    </div>
+                    <div class='zero'><span class='ico ico_zero'></span>원</div>
+                    <button class='btn btn_black btn_pop mc' onclick="openModal('mc')">코니아 MC 체험하기</button>
+                </div>
+            </div>
+        </section>
+        <!--// EXPERIENCE -->
+
+        <!-- MERIT -->
+        <section class='main_con merit'>
+            <div class='container'>
+                <div class='con_wrap'>
+                    <div class='title_wrap'>
+                        <h2 class='main_tit'>마음만 먹고 오세요.
+                            코니아가 알아서
+                            모두 해드립니다.
+                        </h2>
+                        <p class='sub_tit'>
+                            코니아의 전문가를 믿고<br/>
+                            하루에 1시간만 투자하세요.
+                        </p>
+                    </div>
+                    <div class='merit_wrap'>
+                        <ul>
+                            <li><span class='ico ico_money'></span>
+                                <div class='txt_wrap'>
+                                    <p class='sub_tit'>초기비용 ZERO</p>
+                                    <p>도메인&서버비 걱정 마세요.<br/>
+                                        코니아로 시작하면 초기비용이 없어요.</p>
+                                </div>
+                            </li>
+                            <li><span class='ico ico_stock'></span>
+                                <div class='txt_wrap'>
+                                    <p class='sub_tit'>재고부담 ZERO</p>
+                                    <p>좋은 상품들 소싱하고 배송은 코니아가 할게요.<br/>
+                                        상품만 골라보세요.</p>
+                                </div>
+                            </li>
+                            <li><span class='ico ico_marketing'></span>
+                                <div class='txt_wrap'>
+                                    <p class='sub_tit'>마케팅 ZERO</p>
+                                    <p>너무 쉬워서 결국 광고해야 하나 싶으시죠?<br/>
+                                        광고없이 잘 팔 수 있어요.</p>
+                                </div>
+                            </li>
+                            <li><span class='ico ico_cs'></span>
+                                <div class='txt_wrap'>
+                                    <p class='sub_tit'>CS/반품 ZERO</p>
+                                    <p>고객 상담은 전문가가 하면 어렵지 않아요.<br/>
+                                        그 전문가가 코니아에요.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--// MERIT -->
+
+        <!-- RECOMMEND -->
+        <section class='main_con recommend'>
+            <div class='container'>
+                <div class='con_wrap'>
+                    <h2 class='main_tit'>사랑하는 사람에게
+                        자신있게 추천하세요.</h2>
+                    <p class='sub_txt'>
+                        가성비, 가심비 모두 완벽하지만
+                        아직 우리에게 친숙하지 않은 상품들이 많아요.
+                    </p>
+                    <p class='sub_txt'>
+                        코니아가 대신 먹어보고 사용해서 꼼꼼하게 검증한
+                        최상의 상품들을 선택했어요.
+                    </p>
+                    <p class='sub_txt'>
+                        내가 사고 싶고 사랑하는 사람에게 기꺼이
+                        주고 싶은 마음을 담아 추천합니다.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!--// RECOMMEND -->
+
+        <!-- BRAND -->
+        <section class='main_con brand'>
+            <div class='container center'>
+                <div class='con_wrap'>
+                    <h2 class='main_tit container'>물론 모두에게 사랑받는<br/>
+                        이미 검증된 상품들도
+                        준비되어 있어요.</h2>
+
+                    <div class="brand_wrap">
+                        <div class="left">
+                            <ul class="roller">
+                                <li><img src='resources/images/images/img_brand01.png' alt=""></li>
+                                <li><img src='resources/images/images/img_brand02.png' alt=""></li>
+                                <li><img src='resources/images/images/img_brand03.png' alt=""></li>
+                                <li><img src='resources/images/images/img_brand04.png' alt=""></li>
+                                <li><img src='resources/images/images/img_brand05.png' alt=""></li>
+                                <li><img src='resources/images/images/img_brand06.png' alt=""></li>
+                                <li><img src='resources/images/images/img_brand07.png' alt=""></li>
+                                <li><img src='resources/images/images/img_brand08.png' alt=""></li>
+                            </ul>
+                        </div>
+                        <div class="right">
+                            <ul class="roller">
+                                <li><img src='resources/images/images/img_brand09.png' alt=""></li>
+                                <li><img src='resources/images/images/img_brand10.png' alt=""></li>
+                                <li><img src='resources/images/images/img_brand11.png' alt=""></li>
+                                <li><img src='resources/images/images/img_brand12.png' alt=""></li>
+                                <li><img src='resources/images/images/img_brand13.png' alt=""></li>
+                                <li><img src='resources/images/images/img_brand14.png' alt=""></li>
+                                <li><img src='resources/images/images/img_brand15.png' alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--// BRAND -->
+
+        <!-- RESULT -->
+        <section class='main_con result'>
+            <div class='container center'>
+                <div class='con_wrap'>
+                    <div class='title_wrap'>
+                        <h2 class='main_tit'>이제 코니아의 주인공이 되어보세요.
+                        </h2>
+                        <p class='sub_tit'>
+                            이미 많은 분들이<br/>
+                            코니아에서 성공을 경험 하고 있어요.
+                        </p>
+                    </div>
+                    <div class='result_wrap'>
+                        <ul class='cl'>
+                            <li class='circle'>
+                                <p>누적매출</p>
+                                <p class='sub_tit'><em class='counter'>931811060</em><span> 원</span></p>
+                            </li>
+                            <li class='circle'>
+                                <p>활동 MC</p>
+                                <p class='sub_tit'><em class='counter'>890</em><span> 명</span></p>
+                            </li>
+                            <!--              <li class='circle'>-->
+                            <!--                <p>함께하는 브랜드</p>-->
+                            <!--                <p class='sub_tit'><em class='count'>1,000</em><span> 개</span></p>-->
+                            <!--              </li>-->
+                            <li class='circle'>
+                                <p>등록된 상품</p>
+                                <p class='sub_tit'><em class='counter'>10000</em><span> 개</span></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--// RESULT -->
+
+        <!-- CONTACT -->
+        <section class='main_con contact'>
+            <div class='container center'>
+                <div class='con_wrap'>
+                    <div class='title_wrap'>
+                        <h2 class='main_tit'>지금 바로 코니아해보세요.
+                        </h2>
+                        <p class='sub_tit'>
+                            상담 신청 시 2일~3일내<br/>
+                            담당자가 연락을 드립니다.
+                        </p>
+                    </div>
+                    <div class='contact_wrap'>
+                        <ul class='cl'>
+                            <li class='circle'>
+                                <strong>01</strong>
+                                <p>신청서 작성</p>
+                            </li>
+                            <li class='circle'>
+                                <strong>02</strong>
+                                <p>담당자 연락</p>
+                                <em>(MC 지원상담)</em>
+                            </li>
+                            <li class='circle'>
+                                <strong>03</strong>
+                                <p>심사 진행</p>
+                            </li>
+                            <li class='circle'>
+                                <strong>04</strong>
+                                <p>MC 가입 진행</p>
+                                <em>(가입링크 전달)</em>
+                            </li>
+                            <li class='circle'>
+                                <strong>05</strong>
+                                <p>입점 완료</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class='btn btn_black btn_pop mc' onclick="openModal('counsel')">신규 MC 상담 신청</button>
+                </div>
+            </div>
+        </section>
+        <!--// CONTACT -->
+    </main>
+    <footer class='footer'>
+        <div class='container cl'>
+            <ul class='policy_wrap'>
+                <li><a href='05_use.html'>이용약관</a></li>
+                <li><a href='06_policy.html'>개인정보 취급방침</a></li>
+            </ul>
+            <!--      <div class='logo'><img alt='conia logo' src='./resource/images/logo_footer.png'></div>-->
+            <p>주소 : 서울특별시 광진구 천호대로 690 3층<br/>사업자 등록번호: 180-81-00861, 통신판매업신고번호 : 제2019-서울광진-1022호</p>
+            <p class='copyright'>Copyright<span>©</span>2022 A.conic. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <!-- MODAL : 코니아 MC 체험하기 -->
+
+    <div class='modal mc'>
+        <div class='modal_con container'>
+            <button class='btn_close ico_close'>
+                <sapn class='sr_only'>팝업 닫기</sapn>
+            </button>
+            <div class='modal_header'>
+                <p>셀렉샵 사장님, 월 매출 얼마나 기대하세요?</p>
+                <h1 class='main_tit'>한달 예상 수입 알아보기</h1>
+            </div>
+            <div class='modal_con'>
+                <!-- SIMULATION -->
+                <div class='simulation_wrap cl'>
+                    <div class='lt step'>
+                        <ul class='step_wrap'>
+                            <li class='active'>
+                                <p>STEP 01</p>
+                                <p class='sub_tit'>카테고리 선택</p>
+                            </li>
+                            <li>
+                                <p>STEP 02</p>
+                                <p class='sub_tit'>판매상품 선택</p>
+                            </li>
+                            <li>
+                                <p>STEP 03</p>
+                                <p class='sub_tit'>상품 추천</p>
+                            </li>
+                        </ul>
+                        <div class='btn_wrap'>
+                            <button class='btn btn_gray btn_prev'>이전</button>
+                            <button class='btn btn_black btn_next'>다음</button>
+                        </div>
+                    </div>
+                    <div class='lt form'>
+                        <!-- STEP 01 -->
+                        <div class='form_wrap step1'>
+                            <p class='sub_tit'>라이프스타일에 맞는 카테고리를 선택해주세요</p>
+                            <div class='radio_item'><input type='radio' id='ct_pet' name='ct_item' checked><label
+                                    for='ct_pet'><span
+                                    class='radio_box'></span>반려동물</label>
+                            </div>
+                            <div class='radio_item'><input type='radio' id='ct_food' name='ct_item'><label
+                                    for='ct_food'><span
+                                    class='radio_box'></span>식품</label>
+                            </div>
+                            <div class='radio_item'><input type='radio' id='ct_health' name='ct_item'><label
+                                    for='ct_health'><span class='radio_box'></span>헬스/건강식품</label></div>
+                            <div class='radio_item'><input type='radio' id='ct_kitchen' name='ct_item'><label
+                                    for='ct_kitchen'><span class='radio_box'></span>주방가전</label></div>
+                            <div class='radio_item'>
+                                <input type='radio' id='ct_interior' name='ct_item'><label
+                                    for='ct_interior'><span class='radio_box'></span>홈인테리어</label></div>
+                        </div>
+                        <!--// STEP 01 -->
+
+                        <!-- STEP 02 -->
+                        <div class='form_wrap step2'>
+                            <p class='sub_tit'>판매하고 싶은 상품을
+                                선택해주세요</p>
+                            <div class='check_item'><input type='checkbox' id='pd01' name='pd_item'
+                                                           checked='checked'><label
+                                    for='pd01'><span
+                                    class='check_box'></span><span class='fl'><span
+                                    class='pd_name'>홍삼 50ml * 30포</span><strong>29,000<span> 원</span></strong></span><strong
+                                    class='return'>
+                                <p>수익률</p>
+                                10<span>%</span></strong></label></div>
+                            <div class='check_item'><input type='checkbox' id='pd02' name='pd_item'
+                                                           checked='checked'><label
+                                    for='pd02'><span
+                                    class='check_box'></span><span class='fl'><span
+                                    class='pd_name'>어린이 홍삼젤리 50P</span><strong>42,000<span> 원</span></strong></span><strong
+                                    class='return'>
+                                <p>수익률</p>
+                                17<span>%</span></strong></label>
+                            </div>
+                            <div class='check_item'><input type='checkbox' id='pd03' name='pd_item'
+                                                           checked='checked'><label
+                                    for='pd03'><span
+                                    class='check_box'></span><span class='fl'><span
+                                    class='pd_name'>루테인 지아잔틴 30일분</span><strong>10,230<span> 원</span></strong></span><strong
+                                    class='return'>
+                                <p>수익률</p>
+                                23<span>%</span></strong></label></div>
+                            <div class='check_item'><input type='checkbox' id='pd04' name='pd_item'><label
+                                    for='pd04'><span
+                                    class='check_box'></span><span class='fl'><span
+                                    class='pd_name'>상황버섯추출액 1box</span><strong>67,800<span> 원</span></strong></span><strong
+                                    class='return'>
+                                <p>수익률</p>
+                                10<span>%</span></strong></label>
+                            </div>
+                            <div class='check_item'><input type='checkbox' id='pd05' name='pd_item'><label
+                                    for='pd05'><span
+                                    class='check_box'></span><span class='fl'><span
+                                    class='pd_name'>다이어트 슬림 900mg x 180정 2박스(4개월분)</span><strong>254,900<span> 원</span></strong></span><strong
+                                    class='return'><p>수익률</p>
+                                10<span>%</span></strong></label></div>
+                        </div>
+                        <!--// STEP 02 -->
+
+                        <!-- STEP 03 -->
+                        <div class='form_wrap step3'>
+                            <p class='sub_tit'>판매할 상품을 몇 명에게 추천할 수 있을까요?</p>
+                            <div class='txt_item'><label for='ref01'><span class='pd_name'>홍삼 50ml * 30포</span><input
+                                    type='text' id='ref01' name='ref_item'><span>명</span></label>
+                            </div>
+                            <div class='txt_item'><label for='ref02'><span class='pd_name'>어린이 홍삼젤리 50P</span><input
+                                    type='text'
+                                    id='ref02'
+                                    name='ref_item'><span>명</span></label>
+                            </div>
+                            <div class='txt_item'><label for='ref03'><span class='pd_name'>루테인 지아잔틴 30일분</span><input
+                                    type='text' id='ref03' name='pd_item'><span>원</span></label></div>
+                            <div class='txt_item'><label for='ref04'><span class='pd_name'>상황버섯추출액 1box</span><input
+                                    type='text'
+                                    id='ref04'><span>명</span></label>
+                            </div>
+                            <div class='txt_item'><label for='ref05'><span
+                                    class='pd_name'>다이어트 슬림 900mg x 180정 2박스(4개월분)</span><input
+                                    type='text' id='ref05'
+                                    name='pd_item'><span>명</span></label></div>
+                        </div>
+                        <!--// STEP 03 -->
+                    </div>
+                </div>
+                <!--// SIMULATION -->
+                <!-- RESULT -->
+                <div class='result_wrap'>
+                    <div class='form_wrap income'>
+                        <div class='list_wrap'>
+                            <dl>
+                                <dt>추천 인원 중 10% 구매 시</dt>
+                                <dd class='total'>
+                                    325,660,000<em>원</em>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>추천 인원 중 20% 구매 시</dt>
+                                <dd class='total'>
+                                    325,660,000<em>원</em>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>추천 인원 중 30% 구매 시</dt>
+                                <dd class='total'>
+                                    325,660,000<em>원</em>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class='btn_wrap'>
+                            <button class='btn btn_white btn_prev'>처음부터 다시하기</button>
+                            <button class='btn btn_gray btn_next'>친구에게 공유하기</button>
+                            <button class='btn btn_black btn_next'>MC 신청 상담하기</button>
+                        </div>
+                    </div>
+                </div>
+                <!--// RESULT -->
+            </div>
+        </div>
+
+    </div>
+
+    <!--// MODAL : 코니아 MC 체험하기 -->
+
+    <!-- MODAL : MC 상담 신청서 -->
+
+    <div class='modal counsel'>
+        <div class='modal_con container'>
+            <button class='btn_close ico_close'>
+                <sapn class='sr_only'>팝업 닫기</sapn>
+            </button>
+            <div class='modal_header'>
+                <p>상담신청 시 2일~3일내 담당자가 연락을 드립니다. </p>
+                <h1 class='main_tit'>상담 신청서</h1>
+            </div>
+            <div class='modal_con cl'>
+                <div class='counsel_wrap'>
+                    <em class='essential'>* 필수 항목</em>
+                    <div class='form_wrap income'>
+                        <dl>
+                            <dt><label>회원구분</label></dt>
+                            <dd>
+                                <div class='row_wrap'>
+                                    <div class='radio_item'><input type='radio' id='mem1' name='member' title='개인'
+                                                                   checked><label
+                                            for='mem1'><span class='radio_box'></span>개인</label>
+                                    </div>
+                                    <div class='radio_item'><input type='radio' id='mem2' name='member'
+                                                                   title='법인/개인사업자'><label
+                                            for='mem2'><span class='radio_box'></span>법인/개인사업자</label>
+                                    </div>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt><label for='name1'>사업자명(회사명)<em>*</em></label></dt>
+                            <dd>
+                                <div class='txt_item'><input type='text' id='name1' name='name' title='사업자명(회사명)'></div>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt><label for='name2'>신청자명<em>*</em></label></dt>
+                            <dd>
+                                <div class='txt_item'><input type='text' id='name2' name='name' title='신청자명'></div>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt><label for='phone'>신청자 연락처<em>*</em></label></dt>
+                            <dd>
+                                <div class='txt_item'><input type='text' id='phone' name='name' title='신청자 연락처'></div>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt><label>E-mail<em>*</em></label></dt>
+                            <dd>
+                                <div class='txt_item email'>
+                                    <div class='email_wrap'><input type='text' name='email1' id='email1'
+                                                                   title='이메일 앞자리'><span
+                                            class='data_txt'>@</span><input type='text' name='email2' id='email2'
+                                                                            value='' title='이메일 뒷자리'>
+                                    </div>
+                                    <select name='selectMail' id='selectMail' title='이메일 뒷자리 선택'>
+                                        <option value='1'>직접입력</option>
+                                        <option value='naver.com'>naver.com</option>
+                                        <option value='daum.net'>daum.net</option>
+                                        <option value='gmail.com'>gmail.com</option>
+                                        <option value='hanmail.net'>hanmail.net</option>
+                                        <option value='korea.kr'>korea.kr</option>
+                                        <option value='nate.com'>nate.com</option>
+                                    </select>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt><label>성별<em>*</em></label></dt>
+                            <dd>
+                                <div class='row_wrap'>
+                                    <div class='radio_item'><input type='radio' id='sex1' name='sex' title='남'
+                                                                   checked><label
+                                            for='mem1'><span class='radio_box'></span>남</label>
+                                    </div>
+                                    <div class='radio_item'><input type='radio' id='sex2' name='sex' title='여'><label
+                                            for='mem2'><span class='radio_box'></span>여</label>
+                                    </div>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt><label>연령<em>*</em></label></dt>
+                            <dd>
+                                <div class="select_item">
+                                    <select name='selectAge' id='selectAge' title='연령 선택'>
+                                        <option value='1'>선택</option>
+                                        <option value='10'>10대 이하</option>
+                                        <option value='20'>20대</option>
+                                        <option value='30'>30대</option>
+                                        <option value='40'>40대</option>
+                                        <option value='50'>50대</option>
+                                        <option value='60'>60대 이상</option>
+                                    </select>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt><label>직업군<em>*</em></label></dt>
+                            <dd>
+                                <div class="select_item">
+                                    <select name='selectJob' id='selectJob' title='직업군 선택'>
+                                        <option value='1'>선택</option>
+                                        <option value='job1'>학생</option>
+                                        <option value='job1'>직장인</option>
+                                        <option value='job3'>주부</option>
+                                        <option value='job4'>자영업</option>
+                                        <option value='job5'>기타</option>
+                                    </select>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt><label>거주지역<em>*</em></label></dt>
+                            <dd>
+                                <div class="select_item">
+                                    <select name='selectAdd' id='selectAdd' title='거주지역 선택'>
+                                        <option value='1'>선택</option>
+                                        <option value='add1'>서울특별시</option>
+                                        <option value='add2'>경기도</option>
+                                        <option value='add3'>인천광역시</option>
+                                        <option value='add4'>부산광역시</option>
+                                        <option value='add5'>광주광역시</option>
+                                        <option value='add6'>대전광역시</option>
+                                        <option value='add7'>대구광역시</option>
+                                        <option value='add8'>울산광역시</option>
+                                        <option value='add9'>세종특별자치시</option>
+                                        <option value='add10'>강원도</option>
+                                        <option value='add11'>충청북도</option>
+                                        <option value='add12'>충청남도</option>
+                                        <option value='add13'>전라북도</option>
+                                        <option value='add14'>전라남도</option>
+                                        <option value='add15'>경상북도</option>
+                                        <option value='add16'>경상남도</option>
+                                        <option value='add17'>제주특별자치도</option>
+                                    </select>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt><label>라이프스타일<em>*</em><span class="small_txt">(최소 3개 / 최대 5개)</span></label></dt>
+                            <dd>
+                                <div class='interest_wrap'>
+                                    <div class='check_wrap'>
+                                        <div class='check_item'><input type='checkbox' id='itr1' name='interest'
+                                                                       title='반려동물'><label
+                                                for='itr1'><span
+                                                class='check_box'></span>반려동물</label></div>
+                                    </div>
+                                    <div class='check_wrap'>
+                                        <div class='check_item'><input type='checkbox' id='itr2' name='interest'
+                                                                       title='생활용품'><label
+                                                for='itr2'><span
+                                                class='check_box'></span>생활용품</label></div>
+                                    </div>
+                                    <div class='check_wrap'>
+                                        <div class='check_item'><input type='checkbox' id='itr3' name='interest'
+                                                                       title='뷰티'><label
+                                                for='itr3'><span
+                                                class='check_box'></span>뷰티</label></div>
+                                    </div>
+                                    <div class='check_wrap'>
+                                        <div class='check_item'><input type='checkbox' id='itr4' name='interest'
+                                                                       title='헬스 / 건강식품'><label
+                                                for='itr4'><span
+                                                class='check_box'></span>헬스 / 건강식품</label></div>
+                                    </div>
+                                    <div class='check_wrap'>
+                                        <div class='check_item'><input type='checkbox' id='itr5' name='interest'
+                                                                       title='스포츠 / 레저'><label
+                                                for='itr5'><span
+                                                class='check_box'></span>스포츠 / 레저</label></div>
+                                    </div>
+                                    <div class='check_wrap'>
+                                        <div class='check_item'><input type='checkbox' id='itr6' name='interest'
+                                                                       title='패션의류 / 잡화'><label
+                                                for='itr6'><span
+                                                class='check_box'></span>패션의류 / 잡화</label></div>
+                                    </div>
+                                    <div class='check_wrap'>
+                                        <div class='check_item'><input type='checkbox' id='itr7' name='interest'
+                                                                       title='주방용품'><label
+                                                for='itr7'><span
+                                                class='check_box'></span>주방용품</label></div>
+                                    </div>
+                                    <div class='check_wrap'>
+                                        <div class='check_item'><input type='checkbox' id='itr8' name='interest'
+                                                                       title='식품'><label
+                                                for='itr8'><span
+                                                class='check_box'></span>식품</label></div>
+                                    </div>
+                                    <div class='check_wrap'>
+                                        <div class='check_item'><input type='checkbox' id='itr9' name='interest'
+                                                                       title='홈인테리어'><label
+                                                for='itr9'><span
+                                                class='check_box'></span>홈인테리어</label></div>
+                                    </div>
+                                    <div class='check_wrap'>
+                                        <div class='check_item'><input type='checkbox' id='itr10' name='interest'
+                                                                       title='출산 / 유아동'><label
+                                                for='itr10'><span
+                                                class='check_box'></span>출산 / 유아동</label></div>
+                                    </div>
+                                    <div class='check_wrap'>
+                                        <div class='check_item'><input type='checkbox' id='itr11' name='interest'
+                                                                       title='반려동물'><label
+                                                for='itr11'><span
+                                                class='check_box'></span>가전디지털</label></div>
+                                    </div>
+                                    <div class='check_wrap'>
+                                        <div class='check_item'><input type='checkbox' id='itr12' name='interest'
+                                                                       title='자동차용품'><label
+                                                for='itr12'><span
+                                                class='check_box'></span>자동차용품</label></div>
+                                    </div>
+                                    <div class='check_wrap'>
+                                        <div class='check_item'><input type='checkbox' id='itr13' name='interest'
+                                                                       title='문구 / 오피스'><label
+                                                for='itr13'><span
+                                                class='check_box'></span>문구 / 오피스</label></div>
+                                    </div>
+                                    <div class='check_wrap'>
+                                        <div class='check_item'><input type='checkbox' id='itr14' name='interest'
+                                                                       title='완구 / 취미'><label
+                                                for='itr14'><span
+                                                class='check_box'></span>완구 / 취미</label></div>
+                                    </div>
+                                    <div class='check_wrap'>
+                                        <div class='check_item'><input type='checkbox' id='itr15' name='interest'
+                                                                       title='도서 / 교육 / 음반'><label
+                                                for='itr15'><span
+                                                class='check_box'></span>도서 / 교육 / 음반</label></div>
+                                    </div>
+                                    <div class='check_wrap'>
+                                        <div class='check_item'><input type='checkbox' id='itr16' name='interest'
+                                                                       title='해외 / 국내여행'><label
+                                                for='itr16'><span
+                                                class='check_box'></span>해외 / 국내여행</label></div>
+                                    </div>
+                                    <div class='check_wrap'>
+                                        <div class='check_item'><input type='checkbox' id='itr17' name='interest'
+                                                                       title='해외직구'><label
+                                                for='itr17'><span
+                                                class='check_box'></span>해외직구</label></div>
+                                    </div>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt><label for='sns'>SNS/블로그 등</label></dt>
+                            <dd class='sns'>
+                                <div class='txt_item'><input type='text' id='sns' name='sns' title='SNS/블로그 등'></div>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt><label>개인정보 동의 </label></dt>
+                            <dd>
+                                <div class='row_wrap'>
+                                    <div class='radio_item'><input type='radio' id='agr1' name='agree' title='동의'
+                                                                   checked><label
+                                            for='agr1'><span
+                                            class='radio_box'></span>동의</label>
+                                    </div>
+                                    <div class='radio_item'><input type='radio' id='agr2' name='agree'
+                                                                   title='비동의'><label
+                                            for='agr2'><span
+                                            class='radio_box'></span>비동의</label>
+                                    </div>
+                                </div>
+                            </dd>
+                        </dl>
+                    </div>
+                    <button class='btn btn_black btn_submit'>상담신청</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--// MODAL : MC 상담 신청서 -->
+</div>
+
+
+<script src='resources/js/swiper.js' type='text/javascript'></script>
+<script>
+
+    function openModal(modalname) {
+        $('.' + modalname).show();
+        $('html, body').addClass('locked');
+
+    }
+
+    // 팝업 닫기
+    $('.modal .btn_close').on('click', function () {
+        $(this).parent().parent().hide();
+        $('html, body').removeClass('locked');
+    });
+
+
+    gsap.from(".counter", {
+        scrollTrigger: ".counter",
+        textContent: 0,
+        duration: 4,
+        snap: {
+            textContent: 1
+        },
+        stagger: {
+            onUpdate: function (item) {
+                this.targets()[0].textContent = numberWithDots(
+                    Math.ceil(this.targets()[0].textContent)
+                );
+            }
+        }
+    });
+
+    function numberWithDots(x) {
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    }
+
+
+</script>
+</body>
+</html>

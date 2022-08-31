@@ -1,0 +1,793 @@
+@charset "utf-8";
+
+/* MODAL : COMMON */
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    overflow: auto;
+    font-size: 1.25rem;
+    background: #F9FAFB;
+    padding: 60px 0;
+    display: none;
+    z-index: 9999;
+}
+
+.modal .container {
+    padding: 0 60px;
+}
+
+.modal [class*='_item'] input:focus {
+    outline: none;
+    border: 1px solid #222222;
+}
+
+.modal [class*='_item'] input, .modal select, .check_item label .check_box {
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.modal .modal_con {
+    position: relative;
+}
+
+.modal .btn_wrap {
+    position: relative;
+    display: block;
+}
+
+.modal .btn_wrap .btn {
+    display: block;
+    line-height: 80px;
+    width: 100%;
+}
+
+.modal .btn_close {
+    position: absolute;
+    top: 0;
+    right: 60px;
+    background-image: url('project/conia-world-front/resources/images/images/ico_popClose.png');
+    width: 40px;
+    height: 40px;
+}
+
+.modal_header {
+    padding-bottom: 80px;
+}
+
+.modal_header p {
+    font-weight: 700;
+    padding-bottom: 17px;
+}
+
+.modal_header .main_tit {
+    font-weight: 700;
+}
+
+.modal.counsel {
+    background: #ffffff;
+}
+
+.radio_item {
+    display: inline-block;
+}
+
+.radio_item label, .check_item label {
+    position: relative;
+    cursor: pointer;
+}
+
+.radio_item input[type=radio], .check_item input[type=checkbox] {
+    display: block;
+    z-index: -1;
+    height: 1px;
+    overflow: hidden;
+    color: transparent;
+    border: 0;
+    padding: 0;
+    opacity: 0;
+    background: none;
+    position: absolute;
+    width: 1px;
+    margin: 0;
+}
+
+.radio_item label .radio_box, .check_item label .check_box {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #dddddd;
+    vertical-align: middle;
+    background-color: #ffffff;
+    position: relative;
+    margin-right: 16px;
+}
+
+.radio_item label .radio_box, .radio_item label .radio_box:after {
+    border-radius: 50%;
+}
+
+.radio_item input[type=radio]:checked + label .radio_box:after, .check_item input[type=checkbox]:checked + label .check_box:after {
+    position: absolute;
+    content: '';
+}
+
+.radio_item input[type=radio]:checked + label .radio_box:after {
+    width: 12px;
+    height: 12px;
+    background: #222222;
+    left: 5px;
+    top: 5px;
+}
+
+.check_item input[type=checkbox]:checked + label .check_box:after {
+    background-image: url('project/conia-world-front/resources/images/images/ico_check.svg');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    left: 4px;
+    top: 6px;
+}
+
+.txt_item input[type=text], select {
+    border: 1px solid #DDDDDD;
+    padding: 10px;
+}
+
+/*// MODAL : COMMON */
+
+/* MODAL : 한달 예상 수입 */
+
+.step {
+    width: 24%;
+    position: relative;
+}
+
+.step .step_wrap {
+    color: #999999;
+    font-size: 0.875rem;
+}
+
+.step .step_wrap li {
+    padding: 42px 40px;
+    background: #ffffff;
+    position: relative;
+
+}
+
+.step .step_wrap li .sub_tit {
+    padding-top: 8px;
+}
+
+.step .step_wrap li:before {
+    position: absolute;
+    content: '';
+    height: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    border: 1px solid #EBECEE;
+}
+
+.step .step_wrap li p {
+    font-weight: 700;
+}
+
+.step .step_wrap li.active p {
+    color: #222222;
+}
+
+.step .step_wrap li.active:before {
+    border: 1px solid #222222;
+    z-index: 10;
+    height: calc(100% - 1px);
+}
+
+.step .btn_wrap .btn {
+    border-radius: 0;
+}
+
+.form {
+    width: 76%;
+    background: #F0F2F4;
+    border: 1px solid #EBECEE;
+}
+
+.form [class*='_item'] {
+    position: relative;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.form label {
+    display: flex;
+    padding: 0 28px;
+    font-size: 1.125rem;
+    color: #666666;
+    line-height: 80px;
+    height: 80px;
+    background: #ffffff;
+    border-radius: 8px;
+    align-items: center;
+}
+
+.form .form_wrap {
+    padding: 80px 30px;
+    max-width: 620px;
+    margin: 0 auto;
+}
+
+.form .form_wrap.income {
+    padding: 0;
+}
+
+.form .form_wrap .sub_tit {
+    text-align: center;
+    font-weight: 700;
+    padding-bottom: 65px;
+}
+
+.form .txt_item label, .form .fl .pd_name + strong {
+    color: #222222;
+}
+
+.form .radio_item, .form .check_item {
+    background: #ffffff;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.form .pd_name {
+    flex: 2;
+}
+
+.form .fl .pd_name + strong > span, .form .return p + span, .form .return p {
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding-left: 2px;
+}
+
+.form .return {
+    color: #18BECF;
+}
+
+.form .return p {
+    display: block;
+    padding-right: 3px;
+}
+
+.form .pd_name + strong, .form .return , .form .pd_yeild {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.form .pd_yeild + span {
+    font-weight: 700;
+    font-size: 12px;
+    margin-left: -3px;
+}
+
+.form [class*='_item'] input:checked + label, .form [class*='_item'] input:checked + label .pd_name {
+    color: #222222;
+    font-weight: 700;
+}
+
+.form [class*='_item'] input:checked + label:before {
+    border: 1px solid #222222;
+    border-radius: 8px;
+    left: 0;
+    content: '';
+    width: 100%;
+    line-height: 78px;
+    height: 78px;
+    position: absolute;
+    background: none;
+}
+
+.form .return {
+    display: inline-block;
+    text-align: center;
+    padding-left: 20px;
+    min-width: 60px;
+}
+
+.form .txt_item input:focus + span:before {
+    border: 1px solid #222222;
+    border-radius: 8px;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 78px;
+    position: absolute;
+    top: 0;
+    background: none;
+}
+
+.form .check_item label {
+    justify-content: space-between;
+}
+
+.form .check_item .fl {
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form .txt_item input[type=text] {
+    text-align: right;
+    width: 140px;
+    margin-right: 8px;
+}
+
+.form .step3 .txt_item input + span {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+
+.result_wrap .list_wrap {
+    border-top: 1px solid #222222;
+    border-bottom: 1px solid #222222;
+}
+
+.result_wrap .list_wrap dl {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.result_wrap .list_wrap .total {
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.result_wrap .list_wrap .total em {
+    font-weight: inherit;
+    font-size: 1.25rem;
+    display: inline-block;
+    padding-left: 6px;
+}
+
+.result_wrap .form_wrap .btn_wrap {
+    display: flex;
+    max-width: 856px;
+    margin: 80px auto 0;
+}
+
+.result_wrap .form_wrap .btn_wrap .btn {
+    margin-right: 8px;
+}
+
+.result_wrap .form_wrap .btn_wrap .btn:last-child {
+    margin: 0;
+}
+
+/*// MODAL : 한달 예상 수입 */
+
+/* MODAL : 상담 신청 */
+.modal {
+    transition: all 1s ease;
+}
+
+.counsel_wrap .txt_item input[type='text'] {
+    min-width: 260px;
+}
+
+.counsel_wrap, .counsel_wrap select {
+    font-size: 1.125rem;
+    position: relative;
+}
+
+.counsel_wrap .essential {
+    text-align: right;
+    margin: -10px 0 10px;
+    display: block;
+}
+
+.counsel_wrap .essential, dt em {
+    color: #EA4040;
+    font-weight: bold;
+    padding-left: 3px;
+}
+
+.counsel_wrap .form_wrap {
+    padding: 40px 30px;
+    border-top: 1px solid #222222;
+    border-bottom: 1px solid #222222;
+}
+
+.counsel_wrap dl {
+    display: flex;
+    align-items: baseline;
+    padding: 25px 0;
+}
+
+.counsel_wrap dl dt {
+    min-width: 220px;
+    color: #222222;
+}
+
+.counsel_wrap dl dt label {
+    font-weight: 700;
+}
+
+.counsel_wrap select {
+    width: 100%;
+    min-width: 260px;
+    box-sizing: border-box;
+    font-family: inherit;
+    background: #ffffff url('project/conia-world-front/resources/images/images/ico_select.png') 93% 50%/12px auto no-repeat;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.counsel_wrap .data_txt {
+    padding: 0 20px;
+
+}
+
+.counsel_wrap .radio_item {
+    min-width: 150px;
+}
+
+.counsel_wrap .interest_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 736px;
+}
+
+.counsel_wrap .interest_wrap .check_wrap {
+    width: 33.333%;
+    padding-bottom: 24px;
+}
+
+.counsel_wrap .btn_submit {
+    width: 100%;
+    line-height: 80px;
+    max-width: 280px;
+    text-align: center;
+    display: block;
+    margin: 80px auto 0;
+}
+
+.counsel_wrap .sns, .sns .txt_item input {
+    width: 100%;
+    max-width: 700px;
+}
+
+.counsel_wrap .txt_item.sns input {
+    width: 100%;
+    max-width: 700px;
+}
+
+.counsel_wrap .email, .counsel_wrap .email_wrap {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-right: 13px;
+}
+
+.counsel_wrap .email_wrap input {
+    width: 100%;
+    max-width: 260px;
+}
+
+.counsel_wrap .email, .counsel_wrap .email select {
+    max-width: initial;
+}
+
+.counsel_wrap .email select {
+    min-width: 160px;
+    max-width: initial;
+    color: inherit;
+}
+
+.counsel_wrap .small_txt {
+    display: block;
+    padding-top: 6px;
+    font-size: 1.025rem;
+}
+
+/*// MODAL : 상담 신청 */
+
+@media screen and (max-width: 1020px) {
+
+    .modal {
+        padding: 30px 0 60px;
+    }
+
+    .modal label, input, p, em {
+        font-size: 15px;
+    }
+
+    .modal .container {
+        padding: 0;
+    }
+
+    .modal .modal_header {
+        padding: 50px 30px 40px;
+    }
+
+    .modal .btn_close {
+        right: 30px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .modal .btn_wrap .btn, .btn_submit {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .modal_header {
+        padding: 50px 0 40px;
+    }
+
+    .modal_header .main_tit {
+        font-size: 30px;
+        padding: 0;
+    }
+
+    .step, .form {
+        width: 100%;
+        padding: 0 30px 40px;
+    }
+
+    .step_wrap {
+        display: flex;
+    }
+
+    .step .step_wrap li {
+        padding: 15px 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .step .step_wrap li p {
+        font-size: 12px;
+    }
+
+    .step .step_wrap li:before {
+        width: 100%;
+    }
+
+    .step .step_wrap li.active:before {
+        height: 100%;
+    }
+
+    .step .step_wrap li .sub_tit {
+        font-size: 15px;
+    }
+
+    .simulation_wrap .btn_wrap {
+        display: flex;
+        position: fixed;
+        justify-content: space-between;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        z-index: 20;
+    }
+
+    .simulation_wrap .btn_wrap .btn {
+        max-width: none;
+        line-height: 54px;
+        padding: 0;
+    }
+
+    .form {
+        border: none;
+        border-top: 1px solid #EBECEE;
+    }
+
+    .form .form_wrap {
+        padding: 0;
+        max-width: 700px;
+    }
+
+    .form .form_wrap .sub_tit {
+        padding: 40px 0;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .form .check_item .fl {
+        display: block;
+    }
+
+    .form .pd_name {
+        padding-bottom: 3px;
+    }
+
+    .form .pd_name, .income .list_wrap dl dt {
+        display: block;
+        width: 100%;
+        flex: auto;
+    }
+
+    .form .pd_name + strong {
+        font-size: 18px;
+    }
+
+    .form .fl .pd_name + strong > span {
+        padding-left: 0;
+    }
+
+    .form .step1 label {
+        height: 65px;
+        line-height: 65px;
+    }
+
+    .form .step1 [class*='_item'] input:checked + label:before {
+        line-height: 63px;
+        height: 63px;
+    }
+
+    .form .step1 .txt_item input:focus + span:before {
+        height: 63px;
+    }
+
+    .form .form_wrap:not(.step1) label, .income .list_wrap dl {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        height: auto;
+        line-height: initial;
+        padding: 20px;
+    }
+
+    .form .txt_item input[type=text] {
+        width: calc(100% - 24px);
+    }
+
+    .form .form_wrap:not(.step1) [class*='_item'] input:checked + label:before {
+        line-height: inherit;
+        height: 100%;
+    }
+
+    .form .form_wrap:not(.step1) .txt_item input:focus + span:before {
+        height: 100%;
+    }
+
+    .form .step3 .pd_name, .result_wrap .income .list_wrap dt {
+        padding-bottom: 16px;
+    }
+
+    .result_wrap .form_wrap .btn_wrap {
+        flex-wrap: wrap;
+        margin: 50px auto;
+    }
+
+    .result_wrap .form_wrap .btn_wrap .btn, .counsel_wrap .btn_submit {
+        max-width: none;
+        padding: 0;
+        line-height: 60px;
+    }
+
+    .result_wrap .form_wrap .btn_wrap .btn {
+        margin: 0 0 8px 0;
+    }
+
+    .result_wrap .income .list_wrap dl {
+        justify-content: flex-end;
+    }
+
+    .result_wrap .income .list_wrap dl dt, dd {
+        font-size: 18px;
+    }
+
+    .result_wrap .income .list_wrap dl .total {
+        font-size: 24px;
+    }
+
+    .modal .result_wrap, .counsel_wrap {
+        padding: 40px 30px;
+    }
+
+    .counsel_wrap .radio_item label .radio_box, .counsel_wrap .check_item label .check_box {
+        margin-right: 8px;
+    }
+
+    .counsel_wrap .form_wrap {
+        padding: 40px 0 10px;
+    }
+
+    .counsel_wrap .essential {
+        right: 30px;
+        top: 14px;
+    }
+
+    .counsel_wrap dl {
+        flex-wrap: wrap;
+        padding:0 0 32px;
+    }
+
+    .counsel_wrap dl dt {
+        width: 100%;
+        display: block;
+        padding-bottom: 16px;
+    }
+
+    .counsel_wrap dl dd {
+        width: 100%;
+    }
+
+    .counsel_wrap .txt_item input[type=text], select {
+        width: 100%;
+        max-width: initial;
+        min-width: initial;
+    }
+
+    .counsel_wrap .radio_item {
+        min-width: initial;
+    }
+
+    .counsel_wrap .row_wrap {
+        display: flex;
+    }
+
+    .counsel_wrap .row_wrap .radio_item {
+        width: 100%;
+    }
+
+    .counsel_wrap .interest_wrap {
+        max-width: initial;
+    }
+
+    .counsel_wrap .interest_wrap .check_wrap {
+        width: 50%;
+    }
+
+    .counsel_wrap .email, .counsel_wrap .email_wrap {
+        width: 100%;
+    }
+
+    .counsel_wrap .email {
+        padding-right: 0;
+    }
+
+    .counsel_wrap select {
+        margin: 0;
+        width: 100%;
+        background: #ffffff url('project/conia-world-front/resources/images/images/ico_select.png') 95% 50%/12px auto no-repeat;
+        max-width: initial;
+        font-size: 15px;
+    }
+
+    .counsel_wrap .email {
+        flex-wrap: wrap;
+    }
+
+    .counsel_wrap .email_wrap {
+        flex-wrap: nowrap;
+        padding: 0 0 8px 0;
+    }
+
+    .counsel_wrap .sns, .counsel_wrap, .sns .txt_item, .sns .txt_item input {
+        max-width: initial;
+    }
+
+    .counsel_wrap .data_txt {
+        padding: 0 7px;
+    }
+
+    .counsel_wrap .btn_submit {
+        margin: 40px 0 0;
+    }
+
+    .counsel_wrap .small_txt {
+        display: inline-block;
+        padding : 0 0 0 8px;
+        text-align: right;
+        font-size: 13px;
+    }
+}

@@ -1,0 +1,726 @@
+@charset "utf-8";
+
+/* MAIN : COMMON */
+
+.main_tit {
+    font-size: 4.5rem;
+    text-align: center;
+}
+
+.sub_tit {
+    font-size: 1.875rem;
+}
+
+.main_con {
+    height: inherit;
+    padding: 160px 0;
+}
+
+.main .main_tit {
+    padding-bottom: 80px;
+}
+
+.swiper-container {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
+
+.swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    transition-property: transform;
+    box-sizing: content-box;
+}
+
+/* MAIN : VISUAL */
+
+.intro {
+    height: 100vh;
+    display: block;
+    position: absolute;
+    z-index: 1000;
+    overflow: hidden;
+    visibility: hidden;
+    width: 100%;
+}
+
+.intro .mask {
+    height: 100vh;
+    z-index: 1000;
+    background: url('project/conia-world-front/resources/images/images/intro_pc.svg') center center / cover no-repeat;
+}
+
+.intro .mask.on {
+    animation: effect 1s;
+    overflow: hidden;
+}
+
+.intro-active {
+    overflow-y: hidden;
+}
+
+.intro-active .intro {
+    visibility: visible;
+}
+
+.intro-active .main_visual .txt_wrap, .intro-active .main_visual .swiper-control {
+    opacity: 0;
+}
+
+@keyframes effect {
+    from {
+        transform: scale(1);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    to {
+        transform: scale(5);
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.main_visual .video_wrap {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    height: 100vh;
+}
+
+.main_visual .video_wrap video {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+}
+
+.main_visual .video_wrap video.mo {
+    display: none;
+}
+
+
+.main_visual .swiper-slide {
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    height: calc(100vh - 130px);
+}
+
+.video_wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 100%;
+}
+
+.video_wrapper video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border: none;
+}
+
+/* 20220816 IE object-fit 대응 */
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -100;
+        transform: translateX(-50%) translateY(-50%);
+    }
+}
+/*// 20220816 IE object-fit 대응 */
+
+.swiper-container-fade.swiper-container-free-mode .swiper-slide {
+    transition-timing-function: ease-out;
+}
+
+.swiper-container-fade .swiper-slide {
+    pointer-events: none;
+    transition-property: opacity;
+}
+
+.swiper-container-fade .swiper-slide .swiper-slide {
+    pointer-events: none;
+}
+
+.swiper-container-fade .swiper-slide-active, .swiper-container-fade .swiper-slide-active .swiper-slide-active {
+    pointer-events: auto;
+}
+
+.main_visual .txt_wrap p {
+    font-size: 1.625rem;
+    padding-bottom: 22px;
+}
+
+.main_visual .txt_wrap h1 {
+    font-size: 6.25rem;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: 700;
+}
+
+.main_visual .swiper-control {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    bottom: 0;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main .swiper-control .swiper-autoplay-pagination {
+    position: relative;
+    padding: 30px 8px;
+    box-sizing: border-box;
+}
+
+.main .swiper-control .swiper-autoplay-pagination .swiper-autoplay-progressbar {
+    position: relative;
+    width: 2px;
+    height: 40px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.main .swiper-control .swiper-autoplay-pagination .swiper-autoplay-progressbar .swiper-autoplay-progressbar-fill {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    width: 2px;
+    height: 0;
+    background: #18BECF;
+    transition-duration: 1s;
+}
+
+.main .swiper-control .swiper-autoplay-pagination .swiper-autoplay-progressbar .swiper-autoplay-progressbar-fill.is-play {
+    bottom: auto;
+    top: 0;
+    width: 2px;
+    height: 40px;
+    transition: 1s all linear;
+}
+
+.main .swiper-control .swiper-autoplay-pagination .swiper-pagination {
+    font-size: 0;
+    top: 0;
+    bottom: 0;
+    white-space: nowrap;
+}
+
+.main .swiper-control .swiper-autoplay-pagination .swiper-pagination span {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    letter-spacing: normal;
+    font-size: 18px;
+    color: #fff;
+}
+
+.main .swiper-control .swiper-autoplay-pagination .swiper-pagination span.swiper-pagination-current {
+    font-weight: 700;
+    top: 0;
+}
+
+.main .swiper-control .swiper-autoplay-pagination .swiper-pagination span.swiper-pagination-total {
+    font-weight: 700;
+    bottom: 0;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.main .main_visual .swiper-container {
+    height: 100%;
+}
+
+.main_visual .scroll_wrap {
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    transform: translateX(-50%);
+    margin-left: -4px;
+    z-index: 10;
+    color: #fff;
+}
+
+.main_visual .scroll_wrap p {
+    font-size: 0.875rem;
+    letter-spacing: .3em;
+    padding-left: 3px;
+    padding-bottom: 14px;
+}
+
+.main_visual .scroll_wrap .ico_scroll {
+    background-image: url('project/conia-world-front/resources/images/images/ico_scroll.png');
+    width: 100%;
+    background-size: 22px auto;
+    height: 34px;
+    text-align: center;
+}
+
+/*// MAIN : VISUAL */
+
+/* MAIN : SERVICE */
+
+.service .container {
+    max-width: 1632px;
+}
+
+.service .con_wrap {
+    display: flex;
+    padding: 0 60px;
+    /*flex-wrap: wrap;*/
+    justify-content: center;
+}
+
+.service .card {
+    margin-right: 120px;
+    max-width: 464px;
+    position: relative;
+}
+
+.service .card img {
+    border-radius: 10px;
+}
+
+.service .card:last-child {
+    margin: 0;
+}
+
+.card img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.service .card .card_txt {
+    padding: 40px 20px 0;
+}
+
+.service .card .card_txt .sub_tit {
+    padding: 8px 0 16px;
+}
+
+.service p {
+    color: #838383;
+}
+
+.service p:first-child {
+    color: #222222;
+    font-weight: 600;
+}
+
+.service .btn_more {
+    padding-top: 40px;
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+
+/* MAIN : REVIEW */
+
+.review .swiper-container {
+    position: relative;
+    max-width: 770px;
+}
+
+.review .swiper-button-prev, .swiper-button-next {
+    width: 40px;
+    height: 29px;
+}
+
+.review .swiper-button-next, .review .swiper-button-prev {
+    right: 0;
+}
+
+.review .swiper-button-prev, .review .swiper-container-rtl .swiper-button-next {
+    left: 0;
+}
+
+.swiper-button-prev:after, .swiper-button-next:after {
+    font-family: inherit;
+    font-size: 0;
+}
+
+.review .swiper-button-prev {
+    background-image: url(project/conia-world-front/resources/images/images/ico_prev.png);
+}
+
+.review .swiper-button-next {
+    background-image: url(project/conia-world-front/resources/images/images/ico_next.png);
+}
+
+.review {
+    padding: 120px 0;
+    background-color: #EFF8FA;
+}
+
+.review .card {
+    text-align: center;
+}
+
+.review .img_reviewer {
+    width: 160px;
+    padding-bottom: 25px;
+}
+
+.review .sub_tit {
+    padding-bottom: 10px;
+}
+
+.review .card_txt .name {
+    color: #999999;
+    padding-bottom: 46px;
+}
+
+.review p {
+    color: #5F5F5F;
+}
+
+.review-pagination {
+    display: none;
+}
+
+
+/* MAIN : NEWS */
+
+.news .con_wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.news .news_tit {
+    font-weight: 400;
+    font-size: 1.5rem;
+    padding: 32px 30px;
+    /*word-break: break-all;*/
+    line-height: 1.4;
+}
+
+.news .card {
+    margin-right: 24px;
+    width: calc(33.333% - 16px);
+    /*transition: 0.4s ease;*/
+}
+
+.news .card:hover .news_img {
+    transform: scale(1.1);
+}
+
+.news .card:last-child {
+    margin: 0;
+}
+
+.news .card_img {
+    overflow: hidden;
+    box-sizing: border-box;
+
+}
+
+.news .card_img .news_img {
+    padding-top: 100%;
+    transition: 0.4s ease;
+}
+
+.news .news_img {
+    overflow: hidden;
+    display: block;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+}
+
+.news .item1 .news_img {
+    background-image: url('project/conia-world-front/resources/images/images/img_news01.png');
+}
+
+.news .item2 .news_img {
+    background-image: url('project/conia-world-front/resources/images/images/img_news02.png');
+}
+
+.news .item3 .news_img {
+    background-image: url('project/conia-world-front/resources/images/images/img_news03.png');
+}
+
+.news-pagination {
+    display: none;
+}
+
+@media screen and (max-width: 1440px) {
+    .service .con_wrap {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+
+    .main_tit {
+        font-size: 30px;
+        padding-bottom: 40px;
+    }
+
+    .sub_tit {
+        font-size: 20px;
+    }
+
+    .main_con p, .main_con a, .main_con span {
+        font-size: 16px;
+    }
+
+    .main_con {
+        padding: 100px 0;
+    }
+
+    .intro .mask {
+        /*background: url('../images/intro_mo.svg') center center / cover no-repeat;*/
+        display: none;
+    }
+
+    .main_visual .video_wrap video.pc {
+        display: block;
+
+    }
+
+    .main_visual .video_wrap video.mo {
+        display: none;
+    }
+
+    .main_visual .scroll_wrap {
+        bottom: 10px;
+    }
+
+    .main_visual .txt_wrap p {
+        font-size: 20px;
+    }
+
+    .main_visual .txt_wrap h1 {
+        font-size: 40px;
+    }
+
+    .main .main_visual .swiper-wrapper, .main .main_visual .swiper-container {
+        height: 100vh;
+    }
+
+    .main_visual .swiper-slide {
+        height: calc(100vh - 50px);
+    }
+
+    .main_visual .swiper-control {
+        align-items: center;
+        left: 50%;
+        top: 200px;
+        transform: translateX(-50%);
+    }
+
+    .main .swiper-control .swiper-progress-pagination .swiper-pagination {
+        width: 48px;
+        height: 2px;
+    }
+
+    .main .swiper-control .swiper-autoplay-pagination .swiper-pagination {
+        font-size: 0;
+        left: 0;
+        white-space: nowrap;
+    }
+
+    .main .swiper-control .swiper-progress-pagination .swiper-pagination .swiper-pagination-progressbar-fill {
+        top: 0;
+    }
+
+    .main .swiper-control .swiper-autoplay-pagination {
+        height: 20px;
+        padding: 8px 20px;
+    }
+
+    .main .swiper-control .swiper-autoplay-pagination .swiper-autoplay-progressbar {
+        width: 48px ;
+        height: 2px;
+    }
+
+    .main .swiper-control .swiper-autoplay-pagination .swiper-autoplay-progressbar .swiper-autoplay-progressbar-fill {
+        right: 0;
+        top: 0;
+        width: 0;
+        height: 2px;
+        bottom: initial;
+    }
+
+    .main .swiper-control .swiper-autoplay-pagination .swiper-autoplay-progressbar .swiper-autoplay-progressbar-fill.is-play {
+        right: auto;
+        left: 0;
+        width: 100%;
+    }
+
+    .main .swiper-control .swiper-autoplay-pagination .swiper-pagination {
+        top: inherit;
+        bottom: initial;
+    }
+
+    .main .swiper-control .swiper-autoplay-pagination .swiper-pagination span {
+        top: 50%;
+        left: initial;
+        transform: translateY(-50%);
+        font-size: 14px;
+    }
+
+    .main .swiper-control .swiper-autoplay-pagination .swiper-pagination span.swiper-pagination-current {
+        left: 0;
+        top: initial;
+    }
+
+    .main .swiper-control .swiper-autoplay-pagination .swiper-pagination span.swiper-pagination-total {
+        right: 0;
+        bottom: initial;
+    }
+
+    .service .con_wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .service .card {
+        margin-right: 0;
+        max-width: none;
+    }
+
+    .service .card {
+        margin: 0;
+        padding-bottom: 80px;
+    }
+
+    .service .card:last-child {
+        padding: 0;
+    }
+
+    .service .btn_more {
+        padding-top: 15px;
+        font-size: 12px;
+    }
+
+    .main_visual .scroll_wrap p {
+        padding-bottom: 0;
+        font-size: 14px;
+    }
+
+    .main_visual .scroll_wrap .ico_scroll {
+        background-image: url('project/conia-world-front/resources/images/images/ico_scroll_mo.png');
+        width: 100%;
+        height: 6px;
+        background-size: 8px auto;
+    }
+
+    [class*='-pagination'].bullet {
+        display: flex;
+        padding-top: 40px;
+        justify-content: center;
+    }
+
+    [class*='-pagination'] .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        background: none;
+        border: 1px solid #666666;
+        opacity: initial;
+        margin: 0 4px;
+
+    }
+
+    .review .swiper-button-prev, .review .swiper-button-next {
+        display: none;
+    }
+
+
+    [class*='-pagination'] .swiper-pagination-bullet-active {
+        background: #222222;
+    }
+
+    .news .card {
+        transition: none;
+    }
+
+    .news .card.reveal {
+        transition: none;
+    }
+
+    .news .card.reveal [class*='delay'] {
+        transition-duration:1s;
+    }
+
+    .news .card:hover .news_img {
+        transform: none;
+    }
+
+    .news .news_tit {
+        font-size: 18px;
+        padding: 16px 10px 0;
+    }
+
+    .news .card:hover .news_img {
+        transform: none;
+    }
+
+    .news .card:last-child {
+        margin: 0;
+    }
+
+    .news .card_img .news_img {
+        padding-top: 100%;
+        transition: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .main_visual .video_wrap video.pc {
+        display: block;
+    }
+
+    .main_visual .video_wrap {
+        top: 0;
+        left: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -1;
+        transform: none;
+    }
+
+    .main_visual .video_wrap video.mo {
+        display: block;
+        /*!*width: 100vh;*!*/
+        /*!*height: auto;*!*/
+        /*!*min-width: 530px;*!*/
+        /*width: 100vh;*/
+        /*height: auto;*/
+        height: 100vh;
+        width: auto;
+    }
+
+}

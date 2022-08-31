@@ -1,0 +1,1730 @@
+@charset "utf-8";
+
+/* SUB : COMMON */
+.sub .header {
+    background: rgba(255, 255, 255, .95);
+}
+
+.sub .header .logo {
+    background: url('project/conia-world-front/resources/images/images/logo_bk.png') center center /100% auto no-repeat;
+}
+
+.sub .header .gnb li a {
+    color: #222222;
+}
+
+.sub .main_tit {
+    font-size: 4.375rem;
+    padding-bottom: 25px;
+}
+
+.sub .main_tit + .sub_tit {
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.sub main {
+    padding-top: 100px;
+}
+
+.title_wrap.container {
+    padding: 160px 0;
+}
+
+.title_wrap.container p {
+    padding-bottom: 30px;
+}
+
+.title_wrap p {
+    font-size: 1.25rem;
+}
+
+.title_wrap .main_tit {
+    line-height: 1.25;
+}
+
+.title_wrap.container p {
+    padding-left: 6px;
+}
+
+.title_wrap h1.main_tit, .main_con .number {
+    font-size: 5rem;
+}
+
+.btn {
+    display: inline-block;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.btn.btn_black {
+    background: #222222;
+    color: #ffffff;
+}
+
+.main_con .con_wrap .btn {
+    padding: 28px 0;
+    min-width: 280px;
+}
+
+.main_con .sub_tit span, .main_con .number span {
+    font-weight: inherit;
+    font-size: 1.25rem;
+}
+
+.main_con .circle, .main_con .result_wrap .circle p, .main_con .circle strong, .main_con .result_wrap .number, .main_con .zero, .pa .main_con .result_wrap .number strong, .pa .main_con .result_wrap .number .counter {
+    font-weight: 700;
+}
+
+.main_con .con_wrap .circle {
+    text-align: center;
+}
+
+.main_con .result_wrap .number {
+    line-height: initial;
+}
+
+.main_con {
+    height: calc(100vh - 100px);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+}
+
+.main_con .container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.main_con .container.center {
+    justify-content: center;
+}
+
+
+.mc .main_con.merit .con_wrap, .pa .main_con.result .con_wrap, .pa .main_con.merit .con_wrap , .cc .model .con_wrap, .hs .main_con.solution .con_wrap,
+.hs .main_con.user_con .con_wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.mc .main_con.merit .title_wrap, .pa .main_con.result .title_wrap, .pa .main_con.merit .title_wrap , .cc .model .title_wrap {
+    width: 50%;
+}
+
+.mc .main_con.merit , .pa .main_con.result , .pa .main_con.merit {
+    padding: 200px 0;
+    height: auto;
+}
+
+/* SUB : MC */
+.mc .main_con.login {
+    background-image: url('project/conia-world-front/resources/images/images/bg_mc01.png');
+    background-position: 22%;
+}
+
+.mc .main_con.experience {
+    background-image: url('project/conia-world-front/resources/images/images/bg_mc02.png');
+    background-position: 84%;
+    height: 100%;
+    padding: 134px 0;
+}
+
+.mc .main_con.merit {
+    background-image: url('project/conia-world-front/resources/images/images/bg_mc03.png');
+    /*height: 1287px;*/
+    background-position: 27%;
+}
+
+.mc .main_con.recommend {
+    background-image: url('project/conia-world-front/resources/images/images/bg_mc05.png');
+    background-position: 64%;
+}
+
+.mc .main_con.brand {
+    background-image: none;
+    color: #222222;
+}
+
+.mc .main_con.result {
+    background-image: url('project/conia-world-front/resources/images/images/bg_mc04.png');
+    background-position: 88%;
+}
+
+.mc .main_con.contact {
+    background-image: url('project/conia-world-front/resources/images/images/bg_contact.png');
+    background-position: 72%;
+}
+
+.mc .main_con.experience, .mc .main_con.brand, .mc .main_con.result, .mc .main_con.contact {
+    text-align: center;
+}
+
+.mc .main_con.login .container, .mc .main_con.recommend .container {
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.mc .main_con.login .con_wrap {
+    width: 30%;
+}
+
+.mc .main_con.login .sub_tit {
+    padding-bottom: 54px;
+}
+
+.mc .main_con .info_wrap {
+    padding-top: 56px;
+    white-space: nowrap;
+}
+
+.mc .main_con .info_wrap .circle {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    line-height: 200px;
+    background: #12CEDB;
+}
+
+.mc .main_con .info_wrap .ico_plus {
+    background-image: url('project/conia-world-front/resources/images/images/ico_plus.png');
+    width: 12px;
+    height: 12px;
+    margin: 0 40px;
+}
+
+.mc .main_con .zero {
+    font-size: 1.875rem;
+    padding: 0 0 70px;
+}
+
+.mc .experience .ico_bottom {
+    position: relative;
+    content: '';
+    margin: -20px auto 40px;
+    display: block;
+    width: 10px;
+    height: 24px;
+    background: url('project/conia-world-front/resources/images/images/ico_arrow.png') center center /100% auto no-repeat;
+}
+
+.mc .main_con .ico_zero {
+    background-image: url('project/conia-world-front/resources/images/images/ico_zero.png');
+    width: 114px;
+    height: 146px;
+    margin-left: 20px;
+}
+
+.main_con .merit_wrap li {
+    padding: 60px 0;
+    border-bottom: 1px solid rgba(239, 239, 240, 0.2);
+}
+
+.main_con .merit_wrap li:first-child {
+    padding-top: 0;
+}
+
+.main_con .merit_wrap li:last-child {
+    border: none;
+    padding-bottom: 0;
+}
+
+.main_con .merit_wrap li .txt_wrap {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.main_con .merit_wrap li .sub_tit {
+    padding-bottom: 24px;
+}
+
+.main_con .merit_wrap .ico {
+    width: 60px;
+    height: 60px;
+    vertical-align: middle;
+    margin: 0 80px 0 30px;
+}
+
+.main_con .merit_wrap .ico_money {
+    background-image: url('project/conia-world-front/resources/images/images/ico_money.png');
+}
+
+.main_con .merit_wrap .ico_cs {
+    background-image: url('project/conia-world-front/resources/images/images/ico_cs.png');
+}
+
+.mc .main_con .merit_wrap .ico_stock {
+    background-image: url('project/conia-world-front/resources/images/images/ico_stock.png');
+}
+
+.mc .main_con .merit_wrap .ico_marketing {
+    background-image: url('project/conia-world-front/resources/images/images/ico_marketing.png');
+}
+
+.circle {
+    vertical-align: middle;
+    border-radius: 50%;
+}
+
+.mc .main_con.recommend .con_wrap {
+    width: 40%;
+}
+
+.mc .main_con.recommend .con_wrap .sub_txt {
+    margin-bottom: 20px;
+    display: block;
+}
+
+.mc .main_con.recommend .con_wrap .sub_txt:last-child {
+    margin-bottom: 0;
+}
+
+.mc .main_con.brand .container {
+    max-width: initial;
+    justify-content: center;
+}
+
+.mc .main_con.brand .con_wrap {
+    overflow: hidden;
+}
+
+.mc .main_con.brand .con_wrap .brand_wrap {
+    padding-top: 120px;
+}
+
+.mc .main_con.brand .simply-scroll, .mc .main_con.brand .simply-scroll .simply-scroll-clip {
+    width: 100%;
+    height: 120px;
+}
+
+.mc .main_con.brand .brand_wrap img {
+    width: 260px;
+    height: auto;
+}
+
+.main_con .contact_wrap .circle, .main_con .result_wrap .circle {
+    border: 1px solid #ffffff;
+}
+
+.main_con .result_wrap ul, .main_con .contact_wrap ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main_con .contact_wrap .circle:after {
+    background-image: url('project/conia-world-front/resources/images/images/ico_step.png');
+    width: 4px;
+    height: 8px;
+    background-size: 100% 8px;
+    content: '';
+    right: -19px;
+    top: 50%;
+    position: absolute;
+}
+
+.main_con .contact_wrap .circle:last-child:after {
+    background-image: none;
+}
+
+.mc .main_con .result_wrap {
+    padding-top: 120px;
+}
+
+.mc .main_con .result_wrap .circle {
+    width: 226px;
+    height: 226px;
+    margin-right: 16px;
+    padding: 80px 0;
+}
+
+.main_con .result_wrap .circle:last-child, .main_con .contact_wrap .circle:last-child {
+    margin: 0;
+}
+
+.main_con .contact_wrap {
+    padding: 80px 0;
+}
+
+.main_con .contact_wrap .circle {
+    display: inline-block;
+    vertical-align: middle;
+    width: 160px;
+    height: 160px;
+    margin-right: 32px;
+    position: relative;
+}
+
+.main_con .contact_wrap .circle strong {
+    display: block;
+    padding: 30px 0 20px;
+}
+
+.mc .main_con.result .counter {
+    font-size: 1.5rem;
+    font-weight: inherit;
+    padding-top: 3px;
+}
+
+/* SUB : PA */
+
+.pa .main_con.result {
+    background-image: url('project/conia-world-front/resources/images/images/bg_pa01.png');
+    background-position: 55%;
+    /*height: 1526px;*/
+    /*padding: 80px 0;*/
+}
+
+.pa .main_con.result .con_wrap {
+    flex-direction: row-reverse;
+}
+
+.pa .main_con.result .title_wrap {
+    width: 100%;
+}
+
+.pa .main_con.merit {
+    background-image: url('project/conia-world-front/resources/images/images/bg_pa02.png');
+    background-position: 23%;
+    /*height: 1287px;*/
+}
+
+.pa .main_con.contact {
+    background-image: url('project/conia-world-front/resources/images/images/bg_contact.png');
+    background-position: 72%;
+    text-align: center;
+}
+
+.pa .main_con.result .result_wrap {
+    width: 40%;
+    min-width: 670px;
+}
+
+.pa .main_con.result .result_wrap ul {
+    display: block;
+}
+
+.pa .main_con.result .result_wrap ul li {
+    text-align: left;
+}
+
+.pa .main_con.result .result_wrap p {
+    padding-bottom: 7px;
+}
+
+.pa .main_con.result .result_wrap .number {
+    padding-bottom: 38px;
+    text-align: left;
+    transition: all .4s ease-in-out;
+}
+
+.pa .main_con.result .result_wrap .number span {
+    padding-left: 12px;
+}
+
+.pa .main_con.result .result_wrap ul li:last-child .number {
+    padding-bottom: 0;
+}
+.pa .main_con.merit .merit_wrap .ico_search {
+    background-image: url('project/conia-world-front/resources/images/images/ico_stock.png');
+}
+
+.pa .main_con.merit .merit_wrap .ico_tv {
+    background-image: url('project/conia-world-front/resources/images/images/ico_tv.png');
+}
+
+.pa .main_con.contact .con_wrap .btn:first-child {
+    margin-right: 16px;
+}
+
+/* SUB : USE , POLICY */
+
+.main_con.policy {
+    height: auto;
+    color: #222222;
+    padding: 80px 6% 0;
+}
+
+.main_con.policy .title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.main_con.policy .title h2 {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 68px;
+}
+
+.main_con.policy .terms {
+    margin-bottom: 20px;
+}
+
+.main_con.policy .terms .tit {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 35px;
+    margin-bottom: 20px;
+}
+
+.main_con.policy .terms h3.tit {
+    margin: 30px 0;
+}
+
+.main_con.policy .terms .tit.small {
+    color: #9f9f9f;
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.main_con.policy .tit.big {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 35px;
+    margin: 40px 0;
+    color: #000;
+}
+
+.main_con.policy .tit.big:first-child {
+    margin-top: 0;
+}
+
+.main_con.policy .termsWrap {
+    width: 560px;
+}
+
+.main_con.policy .termsWrap:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.main_con.policy .left {
+    float: left;
+}
+
+.main_con.policy .right {
+    float: right;
+}
+
+.main_con.policy .terms p {
+    font-size: 18px;
+    line-height: 35px;
+    color: #9F9F9F;
+    margin-bottom: 1rem;
+}
+
+.main_con.policy .indent p {
+    text-indent: -1.25rem;
+    padding-left: 1.25rem;
+}
+
+.main_con.policy .indent p.none {
+    text-indent: 0;
+    padding-left: 0;
+}
+
+.main_con.policy .subTerms {
+    margin: 1rem 0;
+    padding-left: 2rem;
+    word-break: keep-all;
+    list-style: decimal;
+}
+
+.main_con.policy .subTerms li {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #9F9F9F;
+    line-height: 32px;
+}
+
+.main_con.policy .subTerms li.point {
+    color: #FB4E4E;
+}
+
+.main_con.policy .subTerms.second {
+    list-style: upper-alpha;
+}
+
+
+.main_con.policy .subTerms.third {
+    list-style: upper-roman;
+}
+
+.policy .subTerms.ko {
+    list-style: hangul;
+}
+
+.policy .subTerms.circle {
+    list-style: circle;
+}
+
+.policy .subTerms.circle li {
+    margin-bottom: 10px;
+}
+
+.tab {
+    width: 100%;
+    height: 62px;
+    box-sizing: border-box;
+}
+
+.tab li {
+    width: 33.33%;
+    position: relative;
+    float: left;
+    z-index: 1;
+    border-bottom: 2px solid #5c88da;
+}
+
+.tab li span {
+    display: block;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    margin-left: -1px;
+    font-size: 18px;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    background: #f8f8f8;
+    color: #757575;
+    cursor: pointer;
+}
+
+.tab li.active {
+    z-index: 2;
+    border-bottom: none;
+}
+
+.tab li.active span {
+    height: 62px;
+    font-weight: 600;
+    border: 2px solid #5c88da;
+    border-bottom: none;
+    background: #fff;
+    color: #5c88da;
+}
+
+.tab li:not(.active) span:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 1px;
+    background: #ccc;
+}
+
+.tab:after {
+    clear: both;
+    content: '';
+    overflow: hidden;
+}
+
+.tabCon {
+    display: none;
+    margin: 70px auto 120px;
+}
+
+.tabCon.active {
+    display: block;
+}
+
+.main_con.policy .tab.pc {
+    display: block;
+}
+
+.main_con.policy .tab.mo {
+    display: none;
+    font-size: 1rem;
+    color: #222;
+    height: 50px;
+    background: #ffffff url('project/conia-world-front/resources/images/images/ico_select.png') 95% 50%/12px auto no-repeat
+}
+
+
+@media screen and (max-width: 1440px) {
+    .main_con.policy {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+
+    .title_wrap.container {
+        padding: 160px 60px;
+    }
+
+    .main_con .container {
+        padding: 0 60px;
+    }
+
+    .mc .main_con.login .con_wrap, .mc .main_con.recommend .con_wrap {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+
+    .main_txt br {
+        display: none !important;
+    }
+
+    .main_con .container {
+        padding: 0 30px;
+    }
+
+    .sub .header .logo {
+        background: url('project/conia-world-front/resources/images/images/logo_bk.png') center center /100% auto no-repeat;
+    }
+
+    .header .btn_wrap .ico_menu {
+        background-image: url('project/conia-world-front/resources/images/images/ico_menu_bk.png');
+    }
+
+    .sub .header .gnb li a {
+        color: #222222;
+    }
+
+    .sub main {
+        padding-top: 60px;
+    }
+
+    .main_con p {
+        /*line-height: inherit;*/
+        font-size: 16px;
+    }
+
+    .title_wrap.container p {
+        padding-left: 1px;
+    }
+
+    .title_wrap.container {
+        padding: 40px 30px 80px;
+    }
+
+    .title_wrap.container p {
+        padding-bottom: 16px;
+    }
+
+    .title_wrap p {
+        font-size: 14px;
+    }
+
+    .title_wrap .main_tit {
+        line-height: 40px;
+    }
+
+    .title_wrap h1.main_tit, .main_con .number {
+        font-size: 30px;
+        padding-bottom: 0;
+    }
+
+    .main_con .main_tit {
+        font-size: 28px;
+        padding-bottom: 24px;
+    }
+
+    .main_con .sub_tit {
+        font-size: 18px;
+    }
+
+    .main_con .con_wrap .btn {
+        padding: 17px 0;
+        border-radius: 4px;
+        min-width: 160px;
+        font-size: 14px;
+    }
+
+    .main_con .sub_tit span, .main_con .number span {
+        font-weight: inherit;
+        font-size: 1.25rem;
+    }
+
+    .main_con .con_wrap .btn, .main_con .circle, .main_con .result_wrap .circle p, .main_con .circle strong, .main_con .result_wrap .number, .main_con .zero , .counter {
+        font-weight: 700;
+        line-height: inherit;
+    }
+
+    .main_con .con_wrap .circle {
+        text-align: center;
+    }
+
+    .main_con .result_wrap .number {
+        line-height: initial;
+    }
+
+    .main_con {
+        height: calc(100vh - 60px);
+    }
+
+
+    .mc .main_con.merit .title_wrap,
+    .pa .main_con.result .title_wrap,
+    .pa .main_con.merit .title_wrap,
+    .cc .main_con.model .title_wrap {
+        width: 100%;
+    }
+
+    .mc .main_con.login .con_wrap, .mc .main_con.recommend .con_wrap {
+        width: 100%;
+    }
+
+    .mc .main_con.login .sub_tit {
+        padding-bottom: 24px;
+    }
+
+    .mc .main_con .info_wrap .circle {
+        font-size: 16px;
+        width: 120px;
+        line-height: 120px;
+        height: 120px;
+    }
+
+    .mc .main_con .info_wrap .ico_plus {
+        margin: 0 24px;
+    }
+
+    .mc .main_con.experience {
+        padding: 80px 0;
+    }
+
+    .mc .main_con .zero {
+        font-size: 18px;
+        padding: 0 0 55px;
+    }
+
+    .mc .experience .ico_bottom {
+        margin: -10px auto 24px;
+    }
+
+    .mc .main_con .ico_zero {
+        width: 80px;
+        height: 104px;
+    }
+
+    .mc .main_con.merit .title_wrap, .pa .main_con.result .title_wrap, .pa .main_con.merit .title_wra , .cc .main_con .title_wrap, .cc .main_con.model .title_wrap {
+        width: 100%;
+    }
+
+    .mc .main_con.merit, .pa .main_con.merit {
+        height: auto;
+        padding: 80px 0;
+    }
+
+    .mc .main_con.contact, .pa .main_con.contact {
+        height: 882px;
+        /*margin-bottom: 30px;*/
+    }
+
+    .main_con.merit .merit_wrap {
+        padding-top: 80px;
+    }
+
+    .main_con.merit .merit_wrap .ico {
+        width: 30px;
+        height: 30px;
+        margin: 0 0 24px 0;
+    }
+
+    .main_con.merit .merit_wrap li {
+        padding: 0 0 50px;
+        border-bottom: none;
+    }
+
+    .main_con.merit .merit_wrap li:last-child {
+        padding-bottom: 0;
+    }
+
+    .main_con.merit .merit_wrap li .txt_wrap {
+        display: block;
+    }
+
+    .main_con.merit .merit_wrap li:last-child .txt_wrap {
+        padding: 0;
+    }
+
+    .main_con .merit_wrap li .txt_wrap .sub_tit {
+        padding-bottom: 16px;
+    }
+
+    .mc .main_con.result .result_wrap {
+        padding-top: 80px;
+    }
+
+    .mc .main_con.result .result_wrap .circle {
+        width: 146px;
+        height: 146px;
+        padding: 47px 0;
+        margin-right: 8px;
+    }
+
+    .mc .main_con.result .result_wrap .circle p {
+        font-size: 18px;
+    }
+
+    .mc .main_con.result .result_wrap .circle:nth-of-type(1), .mc .main_con.result .result_wrap .circle:nth-of-type(2) {
+        margin-bottom: 8px;
+    }
+
+    .mc .main_con.result .result_wrap .circle:nth-of-type(3n) {
+        margin-right: 0;
+    }
+
+    .mc .main_con.result .result_wrap .circle .sub_tit {
+        padding-top: 6px;
+    }
+
+    .mc .main_con.result .result_wrap .circle span {
+        font-size: 16px;
+    }
+
+    .mc .main_con.brand .container {
+        padding: 0;
+    }
+
+    .mc .main_con.brand .main_tit.container {
+        padding: 0 30px;
+    }
+
+    .mc .main_con.brand .con_wrap .brand_wrap {
+        padding-top: 80px;
+    }
+
+    .mc .main_con.brand .simply-scroll, .mc .main_con.brand .simply-scroll .simply-scroll-clip {
+        width: 100%;
+        height: 70px;
+    }
+
+    .main_con.contact .contact_wrap {
+        padding: 80px 0 40px;
+    }
+
+    .main_con.contact .contact_wrap .circle {
+        width: 120px;
+        height: 120px;
+        margin: 0 20px 20px 0;
+    }
+
+    .main_con.contact .contact_wrap .circle:nth-of-type(2n), .main_con.contact .contact_wrap .circle:last-child {
+        margin: 0 0 20px 0;
+    }
+
+
+    .main_con.contact .contact_wrap .ico_step {
+        display: none;
+    }
+
+    .main_con.contact .circle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .main_con.contact .contact_wrap .circle strong {
+        font-size: 12px;
+        padding: 0 0 8px 0;
+    }
+
+    .main_con.contact .contact_wrap .circle p {
+        font-size: 16px;
+    }
+
+    .main_con.contact .contact_wrap .circle em {
+        font-size: 14px;
+    }
+
+    .main_con.contact .contact_wrap .circle:after {
+        background-image: none;
+    }
+
+    .mc .main_con.result .counter {
+        font-size : 18px;
+    }
+
+    .pa .main_con.result {
+        /*height: calc(100% - 60px);*/
+        padding: 80px 0;
+    }
+
+    .pa .main_con.result .result_wrap {
+        width: 50%;
+        min-width: initial;
+        transition: all .6s ease-in-out;
+    }
+
+    .pa .main_con.result .result_wrap p, .pa .main_con.result .result_wrap .number {
+        font-size: 16px;
+    }
+
+    .pa .main_con.result .con_wrap {
+        flex-direction: row-reverse;
+    }
+
+    .pa .main_con.result .title_wrap {
+        padding-bottom: 156px;
+    }
+
+    .pa .main_con.result .result_wrap .number {
+        padding-bottom: 20px;
+    }
+
+    .pa .main_con.result .result_wrap ul li:last-child .number {
+        padding-bottom: 0;
+    }
+
+    .pa .main_con.result .result_wrap .number .counter {
+        font-size: 32px;
+    }
+
+    .pa .main_con .con_wrap .btn {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .pa .main_con.contact .con_wrap .btn:first-child {
+        margin: 0 0 8px 0;
+    }
+
+    .simply-scroll .simply-scroll-list li {
+        width: 140px;
+        margin: 0 10px;
+        height: auto;
+    }
+
+    .mc .main_con.brand .brand_wrap img {
+        width: 140px;
+        height: auto;
+    }
+
+    .main_con.contact .contact_wrap .circle, .main_con.contact .contact_wrap .circle:nth-of-type(2n) {
+        margin: 0 20px 0 0;
+    }
+
+    .main_con.contact .contact_wrap .circle:last-child {
+        margin: 0;
+    }
+
+    .main_con.policy {
+        padding: 40px 0 0;
+    }
+
+    .main_con.policy .tab.pc {
+        display: none;
+    }
+
+    .main_con.policy .tab.mo {
+        display: block;
+    }
+
+    .tabCon {
+        margin: 50px auto 120px;
+    }
+
+    .main_con.policy .title h2 {
+        font-size: 22px;
+        line-height: initial;
+    }
+
+    .main_con.policy .terms p , .main_con.policy .subTerms li {
+        font-size: 16px;
+        line-height: 32px;
+        margin-bottom: 10px;
+    }
+
+    .main_con.policy .terms h3.tit {
+        margin: 20px 0;
+    }
+
+    .main_con.policy .terms .tit.small {
+        font-size: 16px;
+    }
+
+    .cc .partner_wrap img {
+        width: 140px;
+        height: 70px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main_con.contact .contact_wrap ul {
+        max-width: 500px;
+    }
+
+    .main_con.contact .contact_wrap .circle, .main_con.contact .contact_wrap .circle:nth-of-type(2n) {
+        margin: 0 20px 20px 0;
+    }
+
+    .main_con.contact .contact_wrap .circle:nth-of-type(3) {
+        margin: 0 0 20px 0;
+    }
+
+    .mc .main_con.result .result_wrap .circle:nth-of-type(2n) {
+        margin-right: 0;
+    }
+
+    .main_con.policy .tab.pc {
+        display: none;
+    }
+
+    .main_con.policy .tab.mo {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .pa .main_con.result .result_wrap {
+        width: 88%;
+        transition: all .6s ease-in-out;
+    }
+
+    .main_con.contact .contact_wrap ul {
+        max-width: 360px;
+    }
+
+    .main_con.contact .contact_wrap .circle, .main_con.contact .contact_wrap .circle:nth-of-type(2n) {
+        margin: 0 0 20px 0;
+    }
+
+    .main_con.contact .contact_wrap .circle:nth-of-type(1), .main_con.contact .contact_wrap .circle:nth-of-type(3) {
+        margin: 0 20px 20px 0;
+    }
+
+    .main_con.policy .tab.pc {
+        display: none;
+    }
+
+    .main_con.policy .tab.mo {
+        display: block;
+    }
+}
+
+/* SUB : CC */
+.cc {
+    padding-bottom:0;
+}
+
+.cc .title_wrap .main_txt{
+    display: inline-block;
+    padding: 20px 0 0 0;
+    color: #666666;
+    font-size: 1.25rem;
+    line-height: 32px;
+    font-weight: 300;
+}
+
+.cc .title_wrap.container p {
+    padding-left: 2px;
+}
+
+.cc .idea{
+    background-image: url('project/conia-world-front/resources/images/images/bg_cc01.png');
+}
+
+.cc .model{
+    color: #000;
+    height: auto;
+    padding-top: 160px;
+}
+
+.cc .model .con_wrap .title_wrap{
+    display: flex;
+    align-items: center;
+    height: 901px;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.cc .model .model_wrap{
+    width: 50%;
+}
+
+.cc .model .model_wrap .thumb{
+    margin-bottom: 160px;
+}
+
+.cc .model .model_wrap .thumb:last-child{
+    margin-bottom: 0;
+}
+
+.cc .model .model_wrap .img_wrap{
+    width: 100%;
+    /*height: 764px;*/
+    object-fit: cover;
+    margin-bottom: 40px;
+    margin-left: auto;
+}
+
+.cc .model .model_wrap .txt_wrap .tit{
+    font-size: 55px;
+    line-height: 51px;
+    font-weight: 700;
+}
+
+.cc .model .model_wrap .txt_wrap .txt{
+    font-size: 20px;
+    line-height: 30px;
+    color: #666666;
+    padding-top: 16px;
+}
+
+.cc .artist{
+    position: relative;
+    height: 2051px;
+    margin: 0 67px;
+}
+
+.cc .artist .container{
+    max-width: 1800px;
+    display: block;
+    padding: 0;
+}
+
+.cc .artist .con_wrap{
+    height: 100%;
+}
+
+.cc .artist .thumb_wrap{
+    width: 100%;
+    height: 100%;
+}
+
+.cc .artist .thumb_wrap .thumb{
+    width: 351px;
+    height: 476px;
+    background-size: 351px;
+    position: absolute;
+    box-shadow: 10px 10px 10px rgb(0 0 0 / 10%);
+}
+
+.cc .artist .thumb_wrap .t01{
+    background-image: url('project/conia-world-front/resources/images/images/slide01.jpg');
+    background-repeat: no-repeat;
+    bottom: 510px;
+    left: 0;
+}
+
+.cc .artist .thumb_wrap .t02{
+    background-image: url('project/conia-world-front/resources/images/images/slide02.jpg');
+    background-repeat: no-repeat;
+    top: 255px;
+    left: 197px;
+}
+
+.cc .artist .thumb_wrap .t03{
+    background-image: url('project/conia-world-front/resources/images/images/slide03.jpg');
+    background-repeat: no-repeat;
+    bottom: 176px;
+    left: 579px;
+}
+
+.cc .artist .thumb_wrap .t04{
+    background-image: url('project/conia-world-front/resources/images/images/slide04.jpg');
+    background-repeat: no-repeat;
+    top: 580px;
+    right: 166px;
+}
+
+.cc .artist .thumb_wrap .t05{
+    background-image: url('project/conia-world-front/resources/images/images/slide05.jpg');
+    background-repeat: no-repeat;
+    bottom: 219px;
+    right: 0;
+}
+
+.cc .artist .thumb_wrap .t06{
+    background-image: url('project/conia-world-front/resources/images/images/slide06.jpg');
+    background-repeat: no-repeat;
+    top: 176px;
+    right: 481px;
+}
+
+.cc .artist .title_wrap{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 1146px;
+}
+
+.cc .artist .title_wrap .sub_tit{
+    color: #000;
+    font-size: 200px;
+    line-height: 180px;
+}
+
+.cc .artist .title_wrap .s01{
+    text-align: left;
+}
+
+.cc .artist .title_wrap .s02{
+    text-align: center;
+}
+
+.cc .artist .title_wrap .s03{
+    text-align: right;
+}
+
+.cc .partner{
+    color: #000;
+    height: auto;
+    margin-bottom: 240px;
+}
+
+.cc .partner .main_tit{
+    text-align: center;
+    padding-bottom: 84px;
+}
+
+.cc .partner .partner_wrap ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cc .coming {
+    background-image: url('project/conia-world-front/resources/images/images/bg_cc02.png');
+}
+
+.cc .coming .con_wrap {
+    width: 100%;
+    text-align: center;
+}
+
+.cc .coming .con_wrap .title_wrap .sub_tit {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 300;
+}
+
+.cc .coming .con_wrap .title_wrap .main_tit {
+    font-size: 60px;
+    line-height: 80px;
+    padding: 32px 0;
+}
+
+@media screen and (max-width:1020px) {
+    .cc .main_con.artist .container{
+        width: 100%;
+    }
+
+    .cc .title_wrap .main_txt{
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .cc .model{
+        padding-top: 80px;
+    }
+
+    .cc .model .con_wrap{
+        display: block;
+    }
+
+    .cc .model .con_wrap .title_wrap{
+        display: block;
+        height: inherit;
+        position: inherit;
+    }
+
+    .cc .model .model_wrap{
+        width: 100%;
+    }
+
+    .cc .model .model_wrap .img_wrap{
+        width: 100%;
+        height: 100%;
+    }
+
+    .cc .model .model_wrap .txt_wrap .tit{
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .cc .model .model_wrap .txt_wrap .txt{
+        font-size: 16px;
+        line-height: 12px;
+    }
+
+    .cc .model .model_wrap .thumb{
+        margin-bottom: 80px;
+    }
+
+    .cc .artist{
+        margin: 0 30px;
+        height: 1115px;
+    }
+
+    .cc .artist .thumb_wrap .thumb{
+        width: 124px;
+        height: 170px;
+        background-size: 124px;
+    }
+
+    .cc .artist .title_wrap{
+        width: 289px;
+    }
+
+    .cc .artist .title_wrap .sub_tit{
+        font-size: 50px;
+        line-height: 59px;
+    }
+
+    .cc .artist .thumb_wrap .t01{
+        bottom: 304px;
+    }
+
+    .cc .artist .thumb_wrap .t02{
+        top: 280px;
+        left: 0;
+    }
+
+    .cc .artist .thumb_wrap .t03{
+        left: 129px;
+        bottom: 161px;
+    }
+
+    .cc .artist .thumb_wrap .t04{
+        top: 276px;
+        right: 0;
+    }
+
+    .cc .artist .thumb_wrap .t05{
+        bottom:354px;
+    }
+
+    .cc .artist .thumb_wrap .t06{
+        top: 160px;
+        right: 71px;
+    }
+
+    .cc .partner{
+        margin-bottom: 150px;
+    }
+
+    .cc .partner .main_tit{
+        padding-bottom: 30px;
+    }
+
+    .cc .partner .con_wrap{
+        width: 100%;
+    }
+
+    .cc .partner .partner_wrap ul {
+        justify-content: space-between;
+    }
+
+    .cc .partner .partner_wrap ul li {
+        /*width: 50%;*/
+        /*margin: 10px 0;*/
+        padding-bottom: 20px;
+    }
+
+    .cc .partner .reveal [class*='delay'] , .contact .reveal [class*='delay'] {
+        transition-duration:1s;
+    }
+
+    .cc .partner .con_wrap .title_wrap .sub_tit{
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .cc .partner .con_wrap .title_wrap .main_tit{
+        font-size: 28px;
+        line-height: 34px;
+        padding: 17px 0 30px;
+    }
+
+    .cc .coming .con_wrap .title_wrap .sub_tit {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .cc .coming .con_wrap .title_wrap .main_tit {
+        font-size: 24px;
+        line-height: 34px;
+        padding: 17px 0 30px;
+    }
+
+
+}
+
+/* SUB : HS */
+.hs .title_wrap .main_tit{
+    font-size: 3.75rem;
+    line-height: 80px;
+}
+
+.hs .main_con{
+    color: #000;
+}
+
+.hs .bg_con{
+    transition: all 0.6s ease-in-out;
+    width: 100%;
+    height: 650px;
+    margin: 0 auto;
+}
+
+.hs .bg_con.active{
+    width: 1440px;
+    height: 450px;
+}
+
+.hs .bg_con01{
+    background-image: url('project/conia-world-front/resources/images/images/bg_human02.png');
+}
+
+.hs .bg_con02{
+    background-image: url('project/conia-world-front/resources/images/images/bg_human03.png');
+}
+
+.hs .main_bg{
+    background-image: url('project/conia-world-front/resources/images/images/bg_human01.png');
+    background-repeat: no-repeat;
+    height: 600px;
+}
+
+.hs .solution,
+.hs .user_con
+{
+    height: auto;
+    align-items: flex-start;
+    padding: 80px 0 160px;
+}
+
+.hs .solution .title_wrap .main_tit,
+.hs .user_con .title_wrap .main_tit
+{
+    font-size: 3.125rem;
+    line-height: 70px;
+    padding-bottom: 0;
+}
+
+.hs .main_con.solution .con_wrap {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.hs .solution .con_wrap .title_wrap
+{
+    width: 50%;
+}
+
+.hs .solution .con_wrap .sub_wrap
+{
+    width: 50%;
+}
+
+.hs .solution .con_wrap .sub_wrap p
+{
+    color: #666666;
+    margin-bottom: 24px;
+}
+
+.hs .solution .con_wrap .sub_wrap p:last-child
+{
+    margin-bottom: 0;
+}
+
+.hs .user_con .title_wrap{
+    width: 100%;
+    padding-bottom: 80px;
+}
+
+.hs .user_con .con_wrap .card{
+    width: 33.3%;
+    padding-right: 108px;
+}
+
+.hs .user_con .con_wrap .card:last-child{
+    padding-right: 75px;
+}
+
+.hs .user_con .con_wrap .card .ico{
+    width: 60px;
+    height: 60px;
+    background-size: 60px;
+    margin-bottom: 49px;
+}
+
+.hs .user_con .con_wrap .card.active .ico01 , .hs .user_con .con_wrap .card.active .ico03  {
+    animation-name: rotating;
+    animation-duration: 3s;
+}
+
+.hs .user_con .con_wrap .card.active .ico02{
+    animation-name: scales;
+    animation-duration: 3s;
+}
+
+@keyframes rotating {
+    from {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -ms-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes scales {
+    0% {
+        -ms-transform: scale(1);
+        -moz-transform: scale(1);
+        -webkit-transform: scale(1);
+        -o-transform: scale(1);
+        transform:scale(1);
+    }
+    50%{
+        -ms-transform: scale(1.15);
+        -moz-transform: scale(1.15);
+        -webkit-transform: scale(1.15);
+        -o-transform: scale(1.15);
+        transform: scale(1.15);
+    }
+    100% {
+        -ms-transform: scale(1);
+        -moz-transform: scale(1);
+        -webkit-transform: scale(1);
+        -o-transform: scale(1);
+        transform:scale(1);
+    }
+}
+
+.hs .user_con .con_wrap .card .ico01{
+    background-image: url('project/conia-world-front/resources/images/images/ico_value.png');
+}
+
+.hs .user_con .con_wrap .card .ico02{
+    background-image: url('project/conia-world-front/resources/images/images/ico_share.svg');
+}
+
+.hs .user_con .con_wrap .card .ico03{
+    background-image: url('project/conia-world-front/resources/images/images/ico_trust.png');
+}
+
+.hs .user_con .con_wrap .card .card_txt .sub_tit{
+    font-size: 30px;
+    line-height: 45px;
+    margin-bottom: 40px;
+}
+
+.hs .user_con .con_wrap .card .card_txt p{
+    font-size: 20px;
+    line-height: 30px;
+    color: #666666;
+}
+
+.hs .solution:last-child{
+    padding: 80px 0 200px;
+}
+
+@media screen and (max-width: 1440px) {
+    .hs .bg_con.active {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:1020px) {
+    .hs .title_wrap .main_tit{
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .hs .solution .title_wrap .main_tit,
+    .hs .user_con .title_wrap .main_tit
+    {
+        font-size: 24px;
+        line-height: 34px;
+    }
+
+    .hs .main_con.solution .con_wrap {
+        width: 100%;
+    }
+
+    .hs .solution .con_wrap .title_wrap
+    {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    .hs .solution .con_wrap .sub_wrap
+    {
+        width: 100%;
+    }
+
+    .hs .solution .con_wrap .sub_wrap p
+    {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .hs .solution,
+    .hs .user_con
+    {
+        padding: 40px 0 80px;
+    }
+
+    .hs .user_con .title_wrap{
+        padding-bottom: 40px;
+    }
+
+    .hs .user_con .con_wrap .card{
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 40px;
+    }
+
+    .hs .user_con .con_wrap .card:last-child{
+        margin-bottom: 0;
+    }
+
+    .hs .user_con .con_wrap .card .ico{
+        margin-bottom: 16px;
+        width: 30px;
+        height: 30px;
+        background-size: 30px;
+    }
+
+    .hs .user_con .con_wrap .card .card_txt .sub_tit{
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 16px;
+    }
+
+    .hs .user_con .con_wrap .card .card_txt p{
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .hs .main_bg{
+        height: 224px;
+    }
+
+    .hs .solution:last-child{
+        padding: 40px 0 80px;
+    }
+
+    .hs .bg_con{
+        width: 100%;
+        height: 224px;
+    }
+
+    .hs .bg_con.active{
+        width: calc(100% - 60px);
+        height: 186px;
+    }
+
+}

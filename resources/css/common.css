@@ -1,0 +1,749 @@
+@charset "utf-8";
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input, button, select {
+    word-break: keep-all;
+    word-wrap: break-word;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+    margin: 0;
+    padding: 0;
+    font-family: "Pretendard", "Malgun Gothic", "나눔고딕", "Nanum Gothic", "NotoSansKR", "굴림", Gulim, '돋움', dotum, Helvetica, sans-serif;
+    font-weight: 400;
+    line-height: 1.2;
+    box-sizing: border-box;
+    font-size: inherit;
+    letter-spacing: -.05em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+fieldset, img, abbr, acronym {
+    border: 0 none;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 0 none;
+}
+
+caption, th, td {
+    text-align: left;
+    font-weight: normal;
+    border: 0;
+}
+
+address, caption, strong, em, cite {
+    font-weight: normal;
+    font-style: normal;
+}
+
+ins {
+    text-decoration: none;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: "";
+}
+
+blockquote, q {
+    quotes: "" "";
+}
+
+.blind {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+    width: 1px;
+    height: 1px
+}
+
+a {
+    text-decoration: none;
+    color: #222222;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+input {
+    border: none;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-size: 16px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px #fff inset;
+    -webkit-text-fill-color: #000;
+}
+
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+img {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* input 기본 스타일 초기화 */
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/* IE10 이상에서 input box 에 추가된 지우기 버튼 제거 */
+input::-ms-clear {
+    display: none;
+}
+
+/* input type number 에서 화살표 제거 */
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/* Select box 스타일 초기화 */
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+}
+
+/* IE 에서 Select box 화살표 제거 */
+select::-ms-expand {
+    display: none;
+}
+
+/* COMMON */
+html.locked, html.locked body {
+    overflow: hidden;
+}
+
+.u_skip, .blind, .sr_only {
+    overflow: hidden !important;
+    position: absolute !important;
+    clip: rect(0 0 0 0) !important;
+    width: 1px !important;
+    height: 1px !important;
+    margin: -1px !important;
+}
+
+.main_con p, .main_con a, .main_con span {
+    font-size: 1.25rem;
+}
+
+.main_con p {
+    line-height: 1.6;
+}
+
+[class*='tit'] {
+    font-weight: 700;
+}
+
+.sub_tit {
+    font-size: 1.5rem;
+}
+
+/* LAYOUT */
+
+.wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: #222222;
+}
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+    /*transition:all 0.3s ease-in-out;*/
+}
+
+.lt {
+    float: left;
+}
+
+.rt {
+    float: right;
+}
+
+.cl:after {
+    clear: both;
+    content: '';
+    display: block;
+}
+
+/* COMPONENTS */
+
+[class*='ico_'] {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    background-color: transparent;
+}
+
+[class*='btn_'] {
+    display: inline-block;
+    text-align: center;
+    font-weight: 500;
+    box-sizing: border-box;
+    font-size: 1.25rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.btn_black {
+    color: #ffffff;
+    background-color: #222222;
+}
+
+.btn_gray {
+    color: #ffffff;
+    background-color: #666666;
+}
+
+.btn_white {
+    color: #222222;
+    background-color: #ffffff;
+    border: 1px solid #222222;
+}
+
+.btn_line {
+    color: #386BFD;
+    background-color: #ffffff;
+    border: 1px solid #386BFD;
+}
+
+.btn_yellow {
+    color: #000;
+    background-color: #F0CF16;
+    font-weight: 700;
+}
+
+/* ANIMATION */
+
+.main [data-animate="fade-up"] {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 1s all ease;
+}
+
+.main .enable-animate [data-animate="fade-up"] {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.main [data-animate-delay="0.1"] {
+    transition-delay: 0.1s;
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.reveal.active.delay01 {
+    transition-duration: 0.5s;
+}
+
+.reveal.active.delay02 {
+    transition-duration: 1s;
+}
+
+.reveal.active.delay02_5 {
+    transition-duration: 1.25s;
+}
+
+.reveal.active.delay03 {
+    transition-duration: 1.5s;
+}
+
+.reveal.active.delay04 {
+    transition-duration: 2s;
+}
+
+.reveal.active.delay05 {
+    transition-duration: 2.5s;
+}
+
+.reveal.active.delay06 {
+    transition-duration: 3s;
+}
+
+.reveal.active.delay07 {
+    transition-duration: 3.5s;
+}
+
+.reveal.active.delay09 {
+    transition-duration: 4.5s;
+}
+
+.reveal.sm {
+    transform: translateY(30px);
+    transition: 1s all ease;
+    opacity: 0;
+}
+
+.reveal.sm.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+main > .title_wrap{
+    animation: fade-up 0.6s ease-in-out;
+}
+
+@keyframes fade-up {
+    0% {
+        transform: translateY(120px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* HEADER */
+
+.header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
+}
+
+.header .header_wrap {
+    line-height: 100px;
+    max-width: none;
+    padding: 0 60px;
+}
+
+.header .main_logo {
+    float: left;
+    display: block;
+    height: 100px;
+    line-height: 100px;
+}
+
+.header .logo {
+    display: inline-block;
+    width: 226px;
+    height: 30px;
+    vertical-align: middle;
+    background: url('project/conia-world-front/resources/images/images/logo.png') center center /100% auto no-repeat;
+}
+
+.header .gnb {
+    float: right;
+}
+
+.header .gnb li {
+    float: left
+}
+
+.header .gnb li a {
+    color: #fff;
+    display: block;
+    line-height: 100px;
+    padding: 0 20px;
+    font-size: 1.125rem;
+    font-weight: 600;
+    /*transition: color 0.3s;*/
+}
+
+.header .gnb li.on a {
+    font-weight: 800;
+}
+
+.header .gnb li:last-child a {
+    padding-right: 0;
+}
+
+
+.header .btn_wrap .gnb_btn {
+    display: inline-block;
+    height: inherit;
+}
+
+.header .btn_wrap .ico_menu {
+    width: 24px;
+    height: 18px;
+    background-image: url('project/conia-world-front/resources/images/images/ico_menu.png');
+}
+
+
+.header .btn_wrap {
+    display: none;
+}
+
+.header.active {
+    background: rgba(255,255,255,.95);
+    transition: background 0.3s;
+    position: fixed;
+}
+
+.header.active .logo {
+    background: url('project/conia-world-front/resources/images/images/logo_bk.png') center center /100% auto no-repeat;
+
+}
+
+
+.header.active .gnb li a {
+    color: inherit;
+}
+
+.mo_header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /*visibility: hidden;*/
+    /*opacity: 0;*/
+    height: 100vh;
+    z-index: 999;
+    overflow-y: hidden;
+    width: 100%;
+    line-height: 80px;
+    background: url('project/conia-world-front/resources/images/images/bg_menu.png') 100% 100% / cover no-repeat;
+    display:none;
+}
+
+
+.mo_header.active {
+    /*visibility: visible;*/
+    /*opacity: 1;*/
+    z-index: 100;
+    display:block;
+}
+
+.mo_header .header_wrap {
+    line-height: 60px;
+    padding: 0 20px;
+}
+
+.mo_header .main_logo {
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    float: left;
+}
+
+.mo_header .logo {
+    display: block;
+    width: 160px;
+    height: inherit;
+    background: url('project/conia-world-front/resources/images/images/logo_bk.png') center center / 100% auto no-repeat;
+}
+
+.mo_header .btn_wrap {
+    float: right;
+    line-height: 60px;
+    height: 60px;
+}
+
+.mo_header .gnb {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.mo_header .gnb li a {
+    color: #ffffff;
+    display: block;
+    line-height: 80px;
+    padding: 0 20px;
+    font-size: 28px;
+    font-weight: 700;
+    transition: color 0.3s;
+}
+
+.mo_header .btn_close {
+    background-image: url('project/conia-world-front/resources/images/images/ico_menu_close.png');
+    width: 40px;
+    height: inherit;
+    background-size: 20px auto;
+}
+
+/* VISUAL */
+
+.mo_header .header_wrap {
+    line-height: 100px;
+    height: inherit;
+}
+
+.main_visual {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* FOOTER */
+.footer {
+    border-top: 1px solid #EBEBEB;
+    background: #fff;
+    color: #999;
+    text-align: left;
+    font-size: 0.875rem;
+}
+
+.footer .policy_wrap {
+    margin-bottom: 30px;
+}
+
+
+.footer .policy_wrap li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer .policy_wrap li a {
+    font-weight: 700;
+    color: #222222;
+}
+
+.footer .copyright {
+    position: absolute;
+    bottom: 40px;
+    right: 0;
+    font-size: 0.875rem;
+}
+
+.footer .container {
+    padding: 40px 0;
+}
+
+.footer p {
+    line-height: 1.8;
+}
+
+.fixed_icon {
+    position: absolute;
+    right: 30px;
+    bottom: 210px;
+    z-index: 60;
+    height: 80px;
+}
+
+.fixed_icon .ico_scroll_top {
+    background-image: url('project/conia-world-front/resources/images/images/ico_top.png');
+    width: 80px;
+    height: 80px;
+    background-size: 80px auto;
+    cursor: pointer;
+}
+
+.fixed_icon.active {
+    position: fixed;
+    bottom: 30px;
+}
+
+@media screen and (max-width: 1440px) {
+    .container{
+        width: 100%;
+        max-width: 100%;
+        padding: 0 60px;
+    }
+
+    .footer .container{
+        padding: 40px 60px;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+
+    .main_contents .title {
+        font-size: 24px;
+    }
+
+    .main_contents .sub_title {
+        font-size: 18px;
+    }
+
+    .main_contents .sm_title {
+        font-size: 14px;
+    }
+
+    .main_contents .sub_txt {
+        font-size: 15px;
+    }
+
+    .btn {
+        max-width: 182px;
+        font-size: 14px;
+        padding: 14px 0;
+    }
+
+
+    .container {
+        padding: 0 30px;
+    }
+
+    .header .header_wrap {
+        line-height: 60px;
+        padding: 0 30px;
+    }
+
+    .header .main_logo {
+        float: left;
+        display: block;
+        height: 60px;
+        line-height: 60px;
+    }
+
+    .header .logo {
+        display: block;
+        width: 160px;
+        height: inherit;
+        background: url('project/conia-world-front/resources/images/images/logo.png') center center / 160px auto no-repeat;
+    }
+
+    .header .btn_wrap {
+        display: block;
+    }
+
+
+    .header .header_wrap > .gnb {
+        display: none;
+    }
+
+    .header .gnb_btn, .header .mo_gnb {
+        display: block;
+    }
+
+    .header .mo_gnb {
+        float: none;
+        padding-top: 30px;
+    }
+
+    .header .mo_gnb li {
+        float: none;
+    }
+
+    .header .mo_gnb li a {
+        color: #000000;
+        font-size: 28px;
+        line-height: 80px;
+    }
+
+    .header .gnb_wrap {
+        background: #ffffff;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        position: absolute;
+        height: calc(100vh - 60px);
+        margin-top: 60px;
+    }
+
+    .header .btn_wrap {
+        float: right;
+        line-height: 60px;
+        height: 60px;
+    }
+
+    .header.active .logo {
+        background: url('project/conia-world-front/resources/images/images/logo_bk.png') center center / 160px auto no-repeat;
+    }
+
+    .header.active .btn_wrap .ico_menu {
+        background-image: url('project/conia-world-front/resources/images/images/ico_menu_bk.png');
+    }
+
+    .mo_header .gnb li a {
+        font-size: 30px;
+        line-height: 56px;
+    }
+
+    .sub .main_txt .sub_txt {
+        max-width: initial;
+    }
+
+    .footer .container {
+        padding: 30px 20px;
+    }
+
+    .footer .copyright {
+        position: relative;
+        bottom: initial;
+        padding-top: 38px;
+    }
+
+    .fixed_icon {
+        bottom: 270px;
+        height: 52px;
+        right: 20px;
+    }
+
+    .fixed_icon.active {
+        bottom:20px;
+    }
+
+    .fixed_icon .ico_scroll_top {
+        width: 52px;
+        height: 52px;
+        background-size: 52px auto;
+    }
+
+}

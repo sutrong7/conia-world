@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta content='width=device-width, initial-scale=1.0' ,minimum-scale='0,maximum-scale=10,user-scalable=yes"'
+        name='viewport'>
+  <title>CONIA WORLD</title>
+  <link href='resources/fonts/pretendard.css' rel='stylesheet'>
+  <link href='resources/css/swiper.css' rel='stylesheet'>
+  <link href='resources/css/common.css' rel='stylesheet'>
+  <link href='resources/css/main.css' rel='stylesheet'>
+
+  <script src='resources/js/jquery-1.9.1.min.js' type='text/javascript'></script>
+  <script type='text/javascript' src='resources/js/jquery-ui.min.js'></script>
+  <script src='resources/js/common.js' type='text/javascript'></script>
+</head>
+<body>
+<div class='wrap main intro-active'>
+  <div class='intro'>
+    <div class='mask'></div>
+  </div>
+  <!-- PC GNB -->
+  <header class='header'>
+    <div class='header_wrap container cl'>
+      <div class='main_logo lt'>
+        <a href='00_main.html' class='logo'><span class='blind'>코니아월드 로고</span></a>
+      </div>
+      <ul class='gnb'>
+        <li><a href='01_mc.html'>마켓 크리에이터</a></li>
+        <li><a href='02_pa.html'>파트너</a></li>
+        <li><a href='03_cc.html'>콘텐츠 크리에이터</a></li>
+        <li><a href='04_humanSolution.html'>휴먼&솔루션</a></li>
+      </ul>
+      <div class='btn_wrap rt'>
+        <span class='gnb_btn ico_menu'></span>
+      </div>
+    </div>
+  </header>
+  <!-- MO GNB -->
+  <aside class='mo_header'>
+    <div class='header_wrap container'>
+      <div class='header_inner cl'>
+        <div class='main_logo lt'><a href='#' class='main_logo'><span class='blind'>코니아월드 로고</span></a></div>
+        <div class='btn_wrap rt'>
+          <button class='btn_close gnb_btn ico_close'></button>
+        </div>
+      </div>
+      <ul class='gnb'>
+        <li><a href='01_mc.html'>마켓 크리에이터</a></li>
+        <li><a href='02_pa.html'>파트너</a></li>
+        <li><a href='03_cc.html'>콘텐츠 크리에이터</a></li>
+        <li><a href='04_humanSolution.html'>휴먼&솔루션</a></li>
+      </ul>
+    </div>
+  </aside>
+  <div class='intro'>
+    <div class='mask'></div>
+  </div>
+  <main>
+    <!-- VISUAL -->
+    <div class='spot'>
+      <span class='blind'>메인 배너</span>
+      <div class='main_visual'>
+        <div class='video_wrap'>
+          <video class='pc' th:src='@{/resources/_promo/images/video_pc.mp4}' muted autoplay loop
+                 playsinline></video>
+        </div>
+        <div class='swiper-container'>
+          <div class='swiper-wrapper'>
+            <div class='swiper-slide' style=''>
+              <div class='txt_wrap container'>
+                <p data-animate='fade-up'>효과적으로 매출을 높이는</p>
+                <h1 data-animate='fade-up' data-animate-delay='0.1'>데이터 기반의<br/>
+                  멤버십 커머스, 코니아</h1>
+              </div>
+            </div>
+            <div class='swiper-slide' style=''>
+              <div class='txt_wrap container'>
+                <p data-animate='fade-up'>무자본으로 나만의 셀렉샵을 </p>
+                <h1 data-animate='fade-up' data-animate-delay='0.1'>운영할 수 있는<br/>
+                  판매자</h1>
+              </div>
+            </div>
+            <div class='swiper-slide' style=''>
+              <div class='txt_wrap container'>
+                <p data-animate='fade-up'>광고부담 없이</p>
+                <h1 data-animate='fade-up' data-animate-delay='0.1'>판매자를 만날 수<br/>
+                  있는 제조사</h1>
+              </div>
+            </div>
+            <div class='swiper-slide' style=''>
+              <div class='txt_wrap container'>
+                <p data-animate='fade-up'>끼와 아이디어가 넘치는</p>
+                <h1 data-animate='fade-up' data-animate-delay='0.1'>콘텐츠<br/>
+                  크리에이터</h1>
+              </div>
+            </div>
+            <div class='swiper-slide' style=''>
+              <div class='txt_wrap container'>
+                <h1 data-animate='fade-up'>모두가 공존하는
+                  여기는<br/> 코니아입니다.</h1>
+              </div>
+            </div>
+          </div>
+          <div class='swiper-control'>
+            <div class='swiper-autoplay-pagination'>
+              <div class='swiper-pagination'></div>
+              <div class='swiper-autoplay-progressbar'>
+                <span class='swiper-autoplay-progressbar-fill'></span>
+              </div>
+            </div>
+          </div>
+          <div class='scroll_wrap'>
+            <p>SCROLL</p>
+            <i class='ico_scroll'></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--// VISUAL -->
+
+    <!-- SERVICE -->
+    <section class='main_con service'>
+      <div class='container'>
+        <h2 class='main_tit reveal'>코니아의 서비스를<br/>
+          만나보세요.
+        </h2>
+        <div class='con_wrap reveal delay01'>
+          <div class='card reveal delay01'>
+            <img th:src='@{/resources/_promo/images/img_mc.jpg}' alt='마켓크리에이터 소개 이미지'>
+            <div class='card_txt'>
+              <p>마켓크리에이터</p>
+              <h5 class='sub_tit'>쇼핑몰 사장님을 원하시나요?</h5>
+              <p>내 주변의 사람들에게 소개하고 싶은 상품들을
+                선택하고 판매해보세요.
+                나만의 셀렉샵으로 월 고정 수익 기회!</p>
+              <a th:href='@{/mc}'><span class='btn_more'>VIEW MORE</span></a><!-- 20220819 클래스 수정 ksk -->
+            </div>
+          </div>
+          <div class='card reveal delay02'>
+            <img th:src='@{/resources/_promo/images/img_pa.jpg}' alt='파트너 소개 이미지'>
+            <div class='card_txt'>
+              <p>파트너</p>
+              <h5 class='sub_tit'>많은 고객을 만나고 싶으신가요?</h5>
+              <p>특별한 마케팅 없이, 최저가 경쟁없이 더 많은 고객을 만나보세요.
+                우리 제품에 잘 맞는 고객들을 TAPPING!</p>
+              <a th:href='@{/pa}'><span class='btn_more'>VIEW MORE</span></a><!-- 20220819 클래스 수정 ksk -->
+            </div>
+          </div>
+          <div class='card reveal delay03'>
+            <img th:src='@{/resources/_promo/images/img_cc.jpg}' alt='마켓크리에이터 소개 이미지'>
+            <div class='card_txt'>
+              <p>콘텐츠 크리에이터</p>
+              <h5 class='sub_tit'>셀럽을 꿈꾸시나요?</h5>
+              <p>재미로 만든 콘텐츠가 수입이 된다? 내 콘텐츠의 가치를 찾아보세요.
+                넘치는 끼를 발산할 수 있는 찬스!</p>
+              <a th:href='@{/cc}'><span class='btn_more'>VIEW MORE</span></a><!-- 20220819 클래스 수정 ksk -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--// SERVICE -->
+
+    <!-- REVIEW -->
+    <section class='main_con review'>
+      <div class='container reveal'>
+        <h2 class='main_tit'>코니아 생생리뷰</h2>
+        <div class='swiper-container'>
+          <div class='swiper-wrapper con_wrap'>
+            <div class='swiper-slide card'>
+              <img class='img_reviewer' th:src='@{/resources/_promo/images/img_review01.png}'
+                   alt='마켓크리에이터 소개 이미지'>
+              <div class='card_txt'>
+                <h5 class='sub_tit'>" 간단하게 상품을 판매할 수 있었어요 "</h5>
+                <p class='name'>이기쁨 (MC)</p>
+                <p>처음 접해보는 플랫폼이라서 까다롭고 어려울 줄 알았는데 정말 간단하게 상품을 판매할 수 있었어요! 해외 플랫폼 보다 빠르게 접속하고 운영하는 중
+                  상담도 친절하게 해주셔서 소소하게 나만의 MC몰을 운영하고 있답니다~ 많은 업체들의 물건을 직접 골라 판매할 수 있는 점이 가장 마음에 드는 것
+                  같아요.</p>
+              </div>
+            </div>
+            <div class='swiper-slide card'>
+              <img class='img_reviewer' th:src='@{/resources/_promo/images/img_review02.png}'
+                   alt='마켓크리에이터 소개 이미지'>
+              <div class='card_txt'>
+                <h5 class='sub_tit'>“ 최저가 경쟁을 할 필요가 없어요 “</h5>
+                <p class='name'>정승현 (MC)</p> <!-- 20220823 이름 수정 ksk -->
+                <p>지인의 추천으로 시작하게 되었습니다. 처음에는 많이 헤매긴 했었는데 담당자 분이 친절하게 알려주셔서 편하게 상품 판매를 할 수 있었습니다! 상품이
+                  저렴하고 종류도 다양해서 나만의 샵을 꾸미는 재미가 있습니다. 또한, 타 플랫폼처럼 최저가 경쟁을 할 필요가 없어서 초기 비용이 없었던 것이
+                  만족스러웠습니다!</p>
+              </div>
+            </div>
+            <div class='swiper-slide card'>
+              <img class='img_reviewer' th:src='@{/resources/_promo/images/img_review03.png}'
+                   alt='마켓크리에이터 소개 이미지'>
+              <div class='card_txt'>
+                <h5 class='sub_tit'>“ 판매자의 고충을 해결해주는 사이트 “</h5>
+                <p class='name'>김준호 (PA)</p> <!-- 20220823 이름 수정 ksk -->
+                <p>상품 판매 노출시키고 마케팅에 어려움을 겪고 있었는데 코니아를 사용하고 새로운 세상을 발견했습니다! 상품 등록만 하면 알아서 마케팅도 해주고
+                  판매도 해주고 어려움 없이 매출을 낼 수 있어서 너무 좋아요. 주문 들어온거 배송만 해주면 판매 정산금액이 쌓이는걸 보고 매우 만족한 하루를
+                  보내고 있습니다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class='swiper-button-next ico_next'></div>
+        <div class='swiper-button-prev ico_prev'></div>
+        <div class='review-pagination bullet'></div>
+      </div>
+    </section>
+    <!--// REVIEW -->
+
+    <!-- NEWS -->
+    <!-- 20220819 기사 아이템 수정 ksk -->
+    <section class='main_con news' data-trigger>
+      <div class='container reveal'>
+        <h2 class='main_tit reveal'>코니아 뉴스</h2>
+        <div class='swiper-container reveal'>
+          <div class='swiper-wrapper'>
+            <div class='swiper-slide card item1 reveal delay01'>
+              <a href='https://thepublic.kr/news/newsview.php?ncode=1065602297480562' target="_blank">
+                <div class='card_img'>
+                  <span class='news_img'></span>
+                </div>
+                <div class='card_txt'>
+                  <p class='news_tit'>“쇼핑몰 구축부터 세무관리까지”…에이코닉, 올인원 솔루션 제공</p>
+                </div>
+              </a>
+            </div>
+            <div class='swiper-slide card item2 reveal delay02'>
+              <a href='https://www.edaily.co.kr/news/read?newsId=02692886632397144&mediaCodeNo=257&OutLnkChk=Y'
+                 target="_blank">
+                <div class='card_img'>
+                  <span class='news_img'></span>
+                </div>
+                <div class='card_txt'>
+                  <p class='news_tit'>에이코닉, 서울지역협동조합협의회와 '더쎈' 플랫폼 구축</p>
+                </div>
+              </a>
+            </div>
+            <div class='swiper-slide card item3 reveal delay03'>
+              <a href='https://www.sentv.co.kr/news/view/622609' target="_blank">
+                <div class='card_img'>
+                  <span class='news_img'></span>
+                </div>
+                <div class='card_txt'>
+                  <p class='news_tit'>에이코닉, kt cs와 전자유통 전문 파트너십 체결</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class='news-pagination bullet'></div>
+        </div>
+      </div>
+    </section>
+    <!--// 20220819 기사 아이템 수정 ksk -->
+    <!--// NEWS -->
+    <div class="fixed_icon">
+      <span class="ico_scroll_top"><span class="sr_only">상단으로 이동</span></span>
+    </div>
+  </main>
+  <footer class='footer'>
+    <div class='container cl'>
+      <ul class='policy_wrap'>
+        <li><a href='05_use.html'>이용약관</a></li>
+        <li><a href='06_policy.html'>개인정보 취급방침</a></li>
+      </ul>
+      <!--      <div class='logo'><img alt='conia logo' src='./resource/images/logo_footer.png'></div>-->
+      <p>주소 : 서울특별시 광진구 천호대로 690 3층<br />사업자 등록번호: 180-81-00861, 통신판매업신고번호 : 제2019-서울광진-1022호</p>
+      <p class='copyright'>Copyright<span>©</span>2022 A.conic. All rights reserved.</p>
+    </div>
+  </footer>
+  
+  <div class="scroll_top_wrap">
+    <span class="ico_top"></span>
+  </div>
+</div>
+
+
+<script src='resources/js/swiper.js' type='text/javascript'></script>
+<script type='text/javascript' defer>
+  $(document).ready(function () {
+    history.scrollRestoration = 'auto';
+
+    // main visual slide
+    const mainVisualStart = function () {
+      const $swiper = $('.main_visual .swiper-container');
+      const $progressFill = $swiper.find('.swiper-autoplay-progressbar-fill');
+      const visualSwiper = new Swiper('.main_visual .swiper-container', {
+        pagination: {
+          el: '.swiper-pagination',
+          type: 'fraction',
+        },
+        loopAdditionalSlides: 1,
+        speed: 10,
+        loop: true,
+        simulateTouch: false,
+        effect: 'fade',
+        fadeEffect: {
+          crossFade: true,
+        },
+
+        on: {
+          setNextMedia: function () {
+            var swiper = this;
+            swiper.playDuration = 4000;
+          },
+          slideChangeTransitionStart: function () {
+            $progressFill.removeClass('is-play')
+              .css('transition-duration', this.params.speed + 'ms');
+            this.emit('setNextMedia');
+          },
+          slideChangeTransitionEnd: function () {
+            var swiper = this;
+
+            $(swiper.slides).removeClass('enable-animate')
+              .eq(swiper.activeIndex).addClass('enable-animate');
+
+            $progressFill.addClass('is-play')
+              .css('transition-duration', '4000ms');
+
+            clearTimeout(swiper.playTimeout);
+            swiper.playTimeout = setTimeout(function () {
+              swiper.slideNext();
+            }, 4000);
+          },
+        },
+      });
+    };
+
+    // review
+    const reviewSwiper = new Swiper('.review .swiper-container', {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.review-pagination',
+        clickable: true,
+      },
+      speed: 500,
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      loop: true,
+      simulateTouch: true,
+    });
+
+
+    //news
+
+    let ww = $(window).width();
+    let newsSwiper = undefined;
+
+    function initSwiper() {
+
+      if (ww < 1020 && newsSwiper == undefined) {
+        newsSwiper = new Swiper('.news .swiper-container', {
+
+          pagination: {
+            el: '.news-pagination',
+            clickable: true,
+          },
+
+          speed: 500,
+          spaceBetween: 30,
+          centeredSlides: true,
+          autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+          },
+          loop: true,
+        });
+
+      } else if (ww >= 1020 && newsSwiper != undefined) {
+        newsSwiper.destroy();
+        newsSwiper = undefined;
+      }
+    }
+
+    initSwiper();
+
+    $(window).on('resize', function () {
+      ww = $(window).width();
+      initSwiper();
+    });
+
+    // intro
+
+    /* 20220822 슬라이드 오류 수정 ksk */
+
+    const introTimer = function () {
+      $('.mask').addClass('on');
+      $('.wrap').removeClass('intro-active');
+      setTimeout(mainVisualStart, 0);
+    };
+    setTimeout(introTimer, 100);
+
+    if(ww < 1200) {
+      $('.intro').hide();
+    }
+
+    /* 20220822 슬라이드 오류 수정 ksk */
+  });
+</script>
+
+
+</body>
+</html>
