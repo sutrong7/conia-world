@@ -6,7 +6,7 @@
 }
 
 .sub .header .logo {
-    background: url('project/conia-world-front/resources/images/images/logo_bk.png') center center /100% auto no-repeat;
+    background: url('../images/logo_bk.png') center center /100% auto no-repeat;
 }
 
 .sub .header .gnb li a {
@@ -124,25 +124,25 @@
 
 /* SUB : MC */
 .mc .main_con.login {
-    background-image: url('project/conia-world-front/resources/images/images/bg_mc01.png');
+    background-image: url('../images/bg_mc01.png');
     background-position: 22%;
 }
 
 .mc .main_con.experience {
-    background-image: url('project/conia-world-front/resources/images/images/bg_mc02.png');
+    background-image: url('../images/bg_mc02.png');
     background-position: 84%;
     height: 100%;
     padding: 134px 0;
 }
 
 .mc .main_con.merit {
-    background-image: url('project/conia-world-front/resources/images/images/bg_mc03.png');
+    background-image: url('../images/bg_mc03.png');
     /*height: 1287px;*/
     background-position: 27%;
 }
 
 .mc .main_con.recommend {
-    background-image: url('project/conia-world-front/resources/images/images/bg_mc05.png');
+    background-image: url('../images/bg_mc05.png');
     background-position: 64%;
 }
 
@@ -152,12 +152,12 @@
 }
 
 .mc .main_con.result {
-    background-image: url('project/conia-world-front/resources/images/images/bg_mc04.png');
+    background-image: url('../images/bg_mc04.png');
     background-position: 88%;
 }
 
 .mc .main_con.contact {
-    background-image: url('project/conia-world-front/resources/images/images/bg_contact.png');
+    background-image: url('../images/bg_contact.png');
     background-position: 72%;
 }
 
@@ -193,7 +193,7 @@
 }
 
 .mc .main_con .info_wrap .ico_plus {
-    background-image: url('project/conia-world-front/resources/images/images/ico_plus.png');
+    background-image: url('../images/ico_plus.png');
     width: 12px;
     height: 12px;
     margin: 0 40px;
@@ -211,11 +211,11 @@
     display: block;
     width: 10px;
     height: 24px;
-    background: url('project/conia-world-front/resources/images/images/ico_arrow.png') center center /100% auto no-repeat;
+    background: url('../images/ico_arrow.png') center center /100% auto no-repeat;
 }
 
 .mc .main_con .ico_zero {
-    background-image: url('project/conia-world-front/resources/images/images/ico_zero.png');
+    background-image: url('../images/ico_zero.png');
     width: 114px;
     height: 146px;
     margin-left: 20px;
@@ -252,19 +252,19 @@
 }
 
 .main_con .merit_wrap .ico_money {
-    background-image: url('project/conia-world-front/resources/images/images/ico_money.png');
+    background-image: url('../images/ico_money.png');
 }
 
 .main_con .merit_wrap .ico_cs {
-    background-image: url('project/conia-world-front/resources/images/images/ico_cs.png');
+    background-image: url('../images/ico_cs.png');
 }
 
 .mc .main_con .merit_wrap .ico_stock {
-    background-image: url('project/conia-world-front/resources/images/images/ico_stock.png');
+    background-image: url('../images/ico_stock.png');
 }
 
 .mc .main_con .merit_wrap .ico_marketing {
-    background-image: url('project/conia-world-front/resources/images/images/ico_marketing.png');
+    background-image: url('../images/ico_marketing.png');
 }
 
 .circle {
@@ -312,14 +312,14 @@
     border: 1px solid #ffffff;
 }
 
-.main_con .result_wrap ul, .main_con .contact_wrap ul {
+.main_con .result_wrap ul, .main_con .contact_wrap ul , .main_con .mall_wrap ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
 .main_con .contact_wrap .circle:after {
-    background-image: url('project/conia-world-front/resources/images/images/ico_step.png');
+    background-image: url('../images/ico_step.png');
     width: 4px;
     height: 8px;
     background-size: 100% 8px;
@@ -372,10 +372,150 @@
     padding-top: 3px;
 }
 
+.mc .mall  {
+    color: #222222;
+    height: auto;
+    padding: 120px 0;
+    background: #f4f4f4;
+}
+
+.mc .mall .tabBtn {
+    padding: 14px 36px;
+    cursor: pointer;
+}
+
+.mc .mall .tabBtn span {
+    color: #999999;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.mc .mall .tabBtn.active {
+    background: #222222;
+    border-radius: 27px;
+}
+
+.mc .mall .tabBtn.active span {
+    color: #ffffff;
+}
+
+.mc .mall .tab {
+    padding-top:20px;
+}
+
+.mc .mall .tabCon {
+    max-width: 828px;
+    margin: 50px auto 0;
+}
+
+.mc .mall .img_mall {
+    box-shadow: 10px 10px 30px rgb(0 0 0 / 10%);
+    margin-bottom: 53px;
+}
+
+.mc .mall .txt_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.mc .mall .sub_tit {
+    font-size: 1.5rem;
+    padding-bottom: 20px;
+}
+
+.mc .mall .sub_txt {
+    color: #666666;
+}
+
+.mc .mall .con_wrap .btn_shortcut {
+    font-size: 1.125rem;
+    width: 200px;
+    min-width: inherit;
+    padding: 0 24px;
+    height: 52px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    background: #f4f4f4;
+}
+
+.mc .mall .con_wrap .ico_shortcut{
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 24px;
+    width: 12px;
+    height: 12px;
+    background: url("../images/diagonalArray.svg")no-repeat;
+    background-size:12px;
+    transform: translateY(-50%);
+}
+
+.mc .mall .mo_txt {
+    display: none;
+}
+
+@media screen and (max-width: 1020px){
+    .mc .mall .tab{
+        padding-top: 0;
+    }
+
+    .mc .mall .tabBtn{
+        padding: 12px 24px;
+    }
+
+    .mc .mall .tabBtn span{
+        font-size: 16px;
+    }
+
+    .mc .mall .main_tit{
+        text-align: center;
+    }
+
+    .mc .mall .sub_tit{
+        font-size: 18px;
+        padding-bottom: 16px;
+    }
+
+    .mc .mall .tabCon{
+        margin: 40px auto 0;
+    }
+
+    .mc .mall .img_mall{
+        margin-bottom: 40px;
+    }
+
+    .mc .mall .txt_wrap{
+        display: block;
+    }
+
+    .mc .mall .mall_info{
+        margin-bottom: 32px;
+    }
+
+    .mc .mall .con_wrap .btn_shortcut{
+        width: 158px;
+        height: 42px;
+        font-size:14px;
+        padding: 0 20px;
+    }
+
+    .mc .mall .con_wrap .ico_shortcut{
+        width: 10px;
+        height: 10px;
+        background-size: 10px;
+        right: 20px;
+    }
+}
+
 /* SUB : PA */
 
 .pa .main_con.result {
-    background-image: url('project/conia-world-front/resources/images/images/bg_pa01.png');
+    background-image: url('../images/bg_pa01.png');
     background-position: 55%;
     /*height: 1526px;*/
     /*padding: 80px 0;*/
@@ -390,13 +530,13 @@
 }
 
 .pa .main_con.merit {
-    background-image: url('project/conia-world-front/resources/images/images/bg_pa02.png');
+    background-image: url('../images/bg_pa02.png');
     background-position: 23%;
     /*height: 1287px;*/
 }
 
 .pa .main_con.contact {
-    background-image: url('project/conia-world-front/resources/images/images/bg_contact.png');
+    background-image: url('../images/bg_contact.png');
     background-position: 72%;
     text-align: center;
 }
@@ -432,11 +572,11 @@
     padding-bottom: 0;
 }
 .pa .main_con.merit .merit_wrap .ico_search {
-    background-image: url('project/conia-world-front/resources/images/images/ico_stock.png');
+    background-image: url('../images/ico_stock.png');
 }
 
 .pa .main_con.merit .merit_wrap .ico_tv {
-    background-image: url('project/conia-world-front/resources/images/images/ico_tv.png');
+    background-image: url('../images/ico_tv.png');
 }
 
 .pa .main_con.contact .con_wrap .btn:first-child {
@@ -569,13 +709,13 @@
     margin-bottom: 10px;
 }
 
-.tab {
+.policy .tab {
     width: 100%;
     height: 62px;
     box-sizing: border-box;
 }
 
-.tab li {
+.policy .tab li {
     width: 33.33%;
     position: relative;
     float: left;
@@ -583,7 +723,7 @@
     border-bottom: 2px solid #5c88da;
 }
 
-.tab li span {
+.policy .tab li span {
     display: block;
     height: 60px;
     text-align: center;
@@ -597,12 +737,12 @@
     cursor: pointer;
 }
 
-.tab li.active {
+.policy .tab li.active {
     z-index: 2;
     border-bottom: none;
 }
 
-.tab li.active span {
+.policy .tab li.active span {
     height: 62px;
     font-weight: 600;
     border: 2px solid #5c88da;
@@ -611,7 +751,7 @@
     color: #5c88da;
 }
 
-.tab li:not(.active) span:after {
+.policy .tab li:not(.active) span:after {
     content: '';
     position: absolute;
     left: 0;
@@ -621,7 +761,7 @@
     background: #ccc;
 }
 
-.tab:after {
+.policy .tab:after {
     clear: both;
     content: '';
     overflow: hidden;
@@ -636,16 +776,16 @@
     display: block;
 }
 
-.main_con.policy .tab.pc {
+.policy .tab.pc {
     display: block;
 }
 
-.main_con.policy .tab.mo {
+.policy .tab.mo {
     display: none;
     font-size: 1rem;
     color: #222;
     height: 50px;
-    background: #ffffff url('project/conia-world-front/resources/images/images/ico_select.png') 95% 50%/12px auto no-repeat
+    background: #ffffff url('../images/ico_select.png') 95% 50%/12px auto no-repeat
 }
 
 
@@ -679,11 +819,11 @@
     }
 
     .sub .header .logo {
-        background: url('project/conia-world-front/resources/images/images/logo_bk.png') center center /100% auto no-repeat;
+        background: url('../images/logo_bk.png') center center /100% auto no-repeat;
     }
 
     .header .btn_wrap .ico_menu {
-        background-image: url('project/conia-world-front/resources/images/images/ico_menu_bk.png');
+        background-image: url('../images/ico_menu_bk.png');
     }
 
     .sub .header .gnb li a {
@@ -1013,15 +1153,15 @@
         padding: 40px 0 0;
     }
 
-    .main_con.policy .tab.pc {
+    .policy .tab.pc {
         display: none;
     }
 
-    .main_con.policy .tab.mo {
+    .policy .tab.mo {
         display: block;
     }
 
-    .tabCon {
+    .policy .tabCon {
         margin: 50px auto 120px;
     }
 
@@ -1067,11 +1207,11 @@
         margin-right: 0;
     }
 
-    .main_con.policy .tab.pc {
+    .policy .tab.pc {
         display: none;
     }
 
-    .main_con.policy .tab.mo {
+    .policy .tab.mo {
         display: block;
     }
 }
@@ -1094,11 +1234,19 @@
         margin: 0 20px 20px 0;
     }
 
-    .main_con.policy .tab.pc {
+    .policy .tab.pc {
         display: none;
     }
 
-    .main_con.policy .tab.mo {
+    .policy .tab.mo {
+        display: block;
+    }
+
+    /*.mc .mall .sub_txt {*/
+    /*    width: 60%;*/
+    /*}*/
+
+    .mc .mall .mo_txt {
         display: block;
     }
 }
@@ -1122,7 +1270,7 @@
 }
 
 .cc .idea{
-    background-image: url('project/conia-world-front/resources/images/images/bg_cc01.png');
+    background-image: url('../images/bg_cc01.png');
 }
 
 .cc .model{
@@ -1203,42 +1351,42 @@
 }
 
 .cc .artist .thumb_wrap .t01{
-    background-image: url('project/conia-world-front/resources/images/images/slide01.jpg');
+    background-image: url('../images/slide01.jpg');
     background-repeat: no-repeat;
     bottom: 510px;
     left: 0;
 }
 
 .cc .artist .thumb_wrap .t02{
-    background-image: url('project/conia-world-front/resources/images/images/slide02.jpg');
+    background-image: url('../images/slide02.jpg');
     background-repeat: no-repeat;
     top: 255px;
     left: 197px;
 }
 
 .cc .artist .thumb_wrap .t03{
-    background-image: url('project/conia-world-front/resources/images/images/slide03.jpg');
+    background-image: url('../images/slide03.jpg');
     background-repeat: no-repeat;
     bottom: 176px;
     left: 579px;
 }
 
 .cc .artist .thumb_wrap .t04{
-    background-image: url('project/conia-world-front/resources/images/images/slide04.jpg');
+    background-image: url('../images/slide04.jpg');
     background-repeat: no-repeat;
     top: 580px;
     right: 166px;
 }
 
 .cc .artist .thumb_wrap .t05{
-    background-image: url('project/conia-world-front/resources/images/images/slide05.jpg');
+    background-image: url('../images/slide05.jpg');
     background-repeat: no-repeat;
     bottom: 219px;
     right: 0;
 }
 
 .cc .artist .thumb_wrap .t06{
-    background-image: url('project/conia-world-front/resources/images/images/slide06.jpg');
+    background-image: url('../images/slide06.jpg');
     background-repeat: no-repeat;
     top: 176px;
     right: 481px;
@@ -1287,7 +1435,7 @@
 }
 
 .cc .coming {
-    background-image: url('project/conia-world-front/resources/images/images/bg_cc02.png');
+    background-image: url('../images/bg_cc02.png');
 }
 
 .cc .coming .con_wrap {
@@ -1476,15 +1624,15 @@
 }
 
 .hs .bg_con01{
-    background-image: url('project/conia-world-front/resources/images/images/bg_human02.png');
+    background-image: url('../images/bg_human02.png');
 }
 
 .hs .bg_con02{
-    background-image: url('project/conia-world-front/resources/images/images/bg_human03.png');
+    background-image: url('../images/bg_human03.png');
 }
 
 .hs .main_bg{
-    background-image: url('project/conia-world-front/resources/images/images/bg_human01.png');
+    background-image: url('../images/bg_human01.png');
     background-repeat: no-repeat;
     height: 600px;
 }
@@ -1604,15 +1752,15 @@
 }
 
 .hs .user_con .con_wrap .card .ico01{
-    background-image: url('project/conia-world-front/resources/images/images/ico_value.png');
+    background-image: url('../images/ico_value.png');
 }
 
 .hs .user_con .con_wrap .card .ico02{
-    background-image: url('project/conia-world-front/resources/images/images/ico_share.svg');
+    background-image: url('../images/ico_share.svg');
 }
 
 .hs .user_con .con_wrap .card .ico03{
-    background-image: url('project/conia-world-front/resources/images/images/ico_trust.png');
+    background-image: url('../images/ico_trust.png');
 }
 
 .hs .user_con .con_wrap .card .card_txt .sub_tit{

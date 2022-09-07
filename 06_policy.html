@@ -2,8 +2,30 @@
 <html lang='en'>
 <head>
     <meta charset='UTF-8'>
-    <meta content='width=device-width, initial-scale=1.0' ,minimum-scale='0,maximum-scale=10,user-scalable=yes"'
-          name='viewport'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ,minimum-scale=1.0 , maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-compatible" content="IE=edge, chrome=1">
+    <link rel="shortcut icon" th:href="@{/resources/_promo/images/favicon.ico}">
+    <!-- 아이폰 설정 -->
+    <link rel="apple-touch-icon" th:href="@{/resources/_promo/images/favicon.ico}">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no , address=no, email=no" />
+    <!--// 아이폰 설정 -->
+    <meta name="subject" content>
+    <meta name="title" content="코니아월드">
+    <meta name="author" content="코니아">
+    <meta name="description" content="효과적으로 매출을 높이는 데이터 기반의 멤버십 커머스, 코니아">
+    <meta name="keywords" content="코니아, 코니아월드, 멤버십 커머스, 마켓 크리에이터, 파트너, 콘텐츠 크리에이터">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="코니아월드">
+    <meta property="og:description" content="효과적으로 매출을 높이는 데이터 기반의 멤버십 커머스, 코니아">
+    <meta property="og:image" content="/resources/_promo/images/img_link_share.png">
+    <meta property="og:url" content="https://coniaworld.com/">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:url" content="https://coniaworld.com/">
+    <meta name="twitter:image" content="/resources/_promo/images/img_link_share.png">
+
     <title>이용약관</title>
     <link href='resources/fonts/pretendard.css' rel='stylesheet'>
     <link href='resources/css/swiper.css' rel='stylesheet'>
@@ -56,33 +78,21 @@
     </aside>
 
     <main>
-        <!--        <div class='title_wrap container'>-->
-        <!--            <h1 class='main_tit'>이용약관</h1>-->
-        <!--        </div>-->
         <section class="main_con policy">
             <div class="container">
                 <ul class="tab pc">
-                    <li class="tabBtn"><span>MC 이용약관</span></li>
+                    <li class="tabBtn active"><span>MC 이용약관</span></li>
                     <li class="tabBtn"><span>PA 이용약관</span></li><!-- 20220725 FOOTER 와 동일하게 탭 순서 변경 -->
-                    <li class="tabBtn active"><span>개인정보처리방침</span></li>
+                    <li class="tabBtn"><span>개인정보처리방침</span></li>
                 </ul>
-                <select class="tab mo" name="" onchange="changeValue(this)">
+                <select class="tab mo" name="">
                     <option value="0">MC 이용약관</option>
                     <option value="1">PA 이용약관</option>
                     <option value="2">개인정보처리방침</option>
                 </select>
-                <!--                <ul class="tab pc">-->
-                <!--                    <li class="tabBtn active"><span>MC 이용약관</span></li>-->
-                <!--                    <li class="tabBtn"><span>PA 이용약관</span></li>&lt;!&ndash; 20220725 FOOTER 와 동일하게 탭 순서 변경 &ndash;&gt;-->
-                <!--                    <li class="tabBtn"><span>개인정보처리방침</span></li>-->
-                <!--                </ul>-->
-                <!--                <select id="tab" class="tab mo" name="" onchange="changeValue(this)">-->
-                <!--                    <option value="1">MC 이용약관</option>-->
-                <!--                    <option value="2">PA 이용약관</option>-->
-                <!--                    <option value="3">개인정보처리방침</option>-->
-                <!--                </select>-->
+                <!-- 20220825 내용 수정 ksk -->
                 <!-- MC 이용약관 -->
-                <div class="tabCon">
+                <div class="tabCon active">
                     <div class="title">
                         <h2>에이코닉(코니아)플랫폼 MC 이용약관</h2>
                     </div>
@@ -398,6 +408,11 @@
                             <p>① 이 약관의 해석 및 회사와 MC간의 분쟁에 대하여는 대한민국의 법률을 적용합니다.</p>
                             <p>② 이 약관 및 "서비스" 이용과 관련하여 회사와 회원 사이에 분쟁이 발생하여 소송이 제기되는 경우에는 「민사소송법」에 따라 관할법원을
                                 정합니다.</p>
+                        </div>
+                        <div class="terms">
+                            <h3 class="tit">■ 부칙</h3>
+                            <p>제 1 조 (시행일)</p>
+                            <p>이 약관은 2022년 08월 01일부터 시행합니다.</p>
                         </div>
                     </div>
                 </div>
@@ -946,13 +961,13 @@
                         <div class="terms">
                             <h3 class="tit">■ 부칙</h3>
                             <p>제 1 조 (시행일)</p>
-                            <p>이 약관은 2021.01.01부터 시행합니다. </p>
+                            <p>이 약관은 2022년 08월 01일부터 시행합니다.</p>
                         </div>
                     </div>
                 </div>
                 <!--// PA 이용약관 -->
                 <!-- 개인정보처리방침 -->
-                <div class="tabCon active">
+                <div class="tabCon">
                     <div class="title">
                         <h2>개인정보처리방침</h2>
                     </div>
@@ -969,7 +984,7 @@
                                 &lt; 주식회사 에이코닉 &gt;(이)가 개인정보 보호법 제32조에 따라 등록․공개하는 개인정보파일의 처리목적은 다음과 같습니다.
                             </p>
                             <p class="tit small">1. 개인정보 파일명 : 개인정보 수집.이용</p>
-                            <p>개인정보 처리목적 : </p>
+                            <p>- 개인정보 처리목적 : </p>
                             <ul class="subTerms ko">
                                 <li>
                                     회사가 개인정보를 수집하는 목적은 이용자의 신분과 서비스 이용의사를 확인하여 최적화되고 맞춤화된 서비스를 제공하기 위함입니다. 회사는
@@ -989,24 +1004,25 @@
                                 </li>
                             </ul>
                             <p>
-                                수집방법 : 홈페이지, 서면양식, 전화/팩스, 경품행사, 배송요청, 제휴사로부터 제공 받음, 생성정보 수집 툴을 통한 수집, 회원가입, 고객센터
+                                - 수집방법 : 홈페이지, 서면양식, 전화/팩스, 경품행사, 배송요청, 제휴사로부터 제공 받음, 생성정보 수집 툴을 통한 수집, 회원가입, 고객센터
                             </p>
                             <p>
-                                보유근거 : 회사는 이용자의 개인정보를 수집할 경우 법령상 근거가 없는 한 반드시 이용자의 동의를 얻어 수집하며, 이용자의 기본적 인권을 침해할
+                                - 보유근거 : 회사는 이용자의 개인정보를 수집할 경우 법령상 근거가 없는 한 반드시 이용자의 동의를 얻어 수집하며, 이용자의 기본적 인권을 침해할
                                 우려가 있는 인종, 출신지, 본적지, 사상, 정치적 성향, 범죄기록, 건강상태 등의 정보는 이용자의 동의 또는 법령의 규정에 의한 경우 이외에는
                                 수집하지 않습니다.
                             </p>
                             <p>
-                                보유기간 : 5년
+                                - 보유기간 : 5년
                             </p>
                             <p>
-                                관련법령 : 신용정보의 수집/처리 및 이용 등에 관한 기록 : 3년, 소비자의 불만 또는 분쟁처리에 관한 기록 : 3년, 대금결제 및 재화 등의
+                                - 관련법령 : 신용정보의 수집/처리 및 이용 등에 관한 기록 : 3년, 소비자의 불만 또는 분쟁처리에 관한 기록 : 3년, 대금결제 및 재화 등의
                                 공급에 관한 기록 : 5년, 계약 또는 청약철회 등에 관한 기록 : 5년, 표시/광고에 관한 기록 : 6개월
                             </p>
                         </div>
                         <div class="terms indent">
                             <h3 class="tit">제2조(개인정보의 제3자 제공)</h3>
-                            <p>① &lt; 주식회사 에이코닉 &gt;은(는) 개인정보를 제1조(개인정보의 처리 목적)에서 명시한 범위 내에서만 처리하며, 정보주체의 동의, 법률의 특별한
+                            <p>① &lt; 주식회사 에이코닉 &gt;은(는) 개인정보를 제1조(개인정보의 처리 목적)에서 명시한 범위 내에서만 처리하며, 정보주체의 동의, 법률의
+                                특별한
                                 규정 등 「개인정보 보호법」 제17조 및 제18조에 해당하는 경우에만 개인정보를 제3자에게 제공합니다.</p>
                             <p>② &lt; 주식회사 에이코닉 &gt;은(는) 다음과 같이 개인정보를 제3자에게 제공하고 있습니다.</p>
                             <p class="tit small">1. &lt; 주식회사 에이코닉 &gt;</p>
@@ -1044,7 +1060,7 @@
                         <div class="terms indent">
                             <h3 class="tit">제4조(정보주체와 법정대리인의 권리·의무 및 그 행사방법)</h3>
                             <p>① 정보주체는 주식회사 에이코닉에 대해 언제든지 개인정보 열람·정정·삭제·처리정지 요구 등의 권리를 행사할 수 있습니다.</p>
-                            <p>② 제1항에 따른 권리 행사는주식회사 에이코닉에 대해 「개인정보 보호법」 시행령 제41조제1항에 따라 서면, 전자우편, 모사전송(FAX) 등을
+                            <p>② 제1항에 따른 권리 행사는 주식회사 에이코닉에 대해 「개인정보 보호법」 시행령 제41조제1항에 따라 서면, 전자우편, 모사전송(FAX) 등을
                                 통하여 하실 수 있으며 주식회사 에이코닉은(는) 이에 대해 지체 없이 조치하겠습니다.</p>
                             <p>③ 제1항에 따른 권리 행사는 정보주체의 법정대리인이나 위임을 받은 자 등 대리인을 통하여 하실 수 있습니다.이 경우 “개인정보 처리 방법에 관한
                                 고시(제2020-7호)” 별지 제11호 서식에 따른 위임장을 제출하셔야 합니다.</p>
@@ -1075,10 +1091,10 @@
                             <p class="tit small">2. 보존하는 개인정보 항목 : 계좌정보, 거래날짜</p>
                             <p>③ 개인정보 파기의 절차 및 방법은 다음과 같습니다.</p>
                             <p class="tit small">1. 파기절차</p>
-                            <p>&lt; 주식회사 에이코닉 &gt; 은(는) 파기 사유가 발생한 개인정보를 선정하고, &lt; 주식회사 에이코닉 &gt; 의 개인정보 보호책임자의 승인을 받아
-                                개인정보를 파기합니다.</p>
+                            <p class="none">&lt; 주식회사 에이코닉 &gt; 은(는) 파기 사유가 발생한 개인정보를 선정하고, &lt; 주식회사 에이코닉 &gt; 의 개인정보 보호책임자의 승인을
+                                받아 개인정보를 파기합니다.</p>
                             <p class="tit small">2. 파기방법</p>
-                            <p>전자적 파일 형태의 정보는 기록을 재생할 수 없는 기술적 방법을 사용합니다.</p> <!-- 20220707 자적x -> 전자적o -->
+                            <p class="none">전자적 파일 형태의 정보는 기록을 재생할 수 없는 기술적 방법을 사용합니다.</p> <!-- 20220707 자적x -> 전자적o -->
                         </div>
                         <div class="terms">
                             <h3 class="tit">제7조(개인정보의 안전성 확보 조치)</h3>
@@ -1099,7 +1115,7 @@
                             <p class="tit small">5. 비인가자에 대한 출입 통제</p>
                             <p>개인정보를 보관하고 있는 물리적 보관 장소를 별도로 두고 이에 대해 출입통제 절차를 수립, 운영하고 있습니다.</p>
                         </div>
-                        <div class="terms">
+                        <div class="terms indent">
                             <h3 class="tit">제8조(개인정보 자동 수집 장치의 설치•운영 및 거부에 관한 사항)</h3>
                             <p>① 주식회사 에이코닉 은(는) 이용자에게 개별적인 맞춤서비스를 제공하기 위해 이용정보를 저장하고 수시로 불러오는 ‘쿠키(cookie)’를
                                 사용합니다.</p>
@@ -1115,22 +1131,24 @@
                                 <li>쿠키 저장을 거부할 경우 맞춤형 서비스 이용에 어려움이 발생할 수 있습니다.</li>
                             </ul>
                         </div>
-                        <div class="terms">
+                        <div class="terms indent">
                             <h3 class="tit">제9조 (개인정보 보호책임자) </h3>
                             <p>① 주식회사 에이코닉 은(는) 개인정보 처리에 관한 업무를 총괄해서 책임지고, 개인정보 처리와 관련한 정보주체의 불만처리 및 피해구제 등을 위하여
                                 아래와 같이 개인정보 보호책임자를 지정하고 있습니다.</p>
                             <p class="tit small">▶ 개인정보 보호책임자</p>
                             <ul class="subTerms circle">
-                                <li>성명 : romi an</li>
+                                <li>성명 : ROMI AN</li>
                                 <li>직책 : 이사</li>
-                                <li>연락처 : 070-7151-2382, official@conia.co.kr, fax 02-6280-8582</li>
+                                <li>연락처 : 070-7151-2382</li>
+                                <li>e-mail : official@conia.co.kr</li>
+                                <li>F A X : 02-6280-8582</li>
                                 <li>※ 개인정보 보호 담당부서로 연결됩니다.</li>
                             </ul>
                             <p class="tit small">▶ 개인정보 보호 담당부서</p>
                             <ul class="subTerms circle">
                                 <li>부서명 : 서비스 본부</li>
-                                <li>담당자 : romi an</li>
-                                <li>연락처 : 070-4632-2380</li>
+                                <li>담당자 : ROMI AN</li>
+                                <li>연락처 : 070-7151-2382</li>
                             </ul>
                             <p>② 정보주체께서는 주식회사 에이코닉 의 서비스(또는 사업)을 이용하시면서 발생한 모든 개인정보 보호 관련 문의, 불만처리, 피해구제 등에 관한
                                 사항을 개인정보 보호책임자 및 담당부서로 문의하실 수 있습니다. 주식회사 에이코닉 은(는) 정보주체의 문의에 대해 지체 없이 답변 및 처리해드릴
@@ -1138,7 +1156,8 @@
                         </div>
                         <div class="terms">
                             <h3 class="tit">제10조(추가적인 이용·제공 판단기준)</h3>
-                            <p>&lt; 주식회사 에이코닉 &gt; 은(는) ｢개인정보 보호법｣ 제15조제3항 및 제17조제4항에 따라 ｢개인정보 보호법 시행령｣ 제14조의2에 따른 사항을
+                            <p>&lt; 주식회사 에이코닉 &gt; 은(는) ｢개인정보 보호법｣ 제15조제3항 및 제17조제4항에 따라 ｢개인정보 보호법 시행령｣ 제14조의2에 따른
+                                사항을
                                 고려하여 정보주체의 동의 없이 개인정보를 추가적으로 이용·제공할 수 있습니다.</p>
                             <p>이에 따라 &lt; 주식회사 에이코닉 &gt; 가(이) 정보주체의 동의 없이 추가적인 이용·제공을 하기 위해서 다음과 같은 사항을 고려하였습니다.</p>
                             <ul class="subTerms circle">
@@ -1157,15 +1176,15 @@
                             <p class="tit small">▶ 개인정보 열람청구 접수·처리 부서</p>
                             <ul class="subTerms circle">
                                 <li>부서명 : 서비스 본부</li>
-                                <li>담당자 : romi an부</li>
-                                <li>연락처 : 070-4632-2380</li>
+                                <li>담당자 : ROMI AN</li>
+                                <li>연락처 : 070-7151-2382</li>
                             </ul>
                         </div>
                         <div class="terms">
                             <h3 class="tit">제12조(권익침해 구제방법)</h3>
                             <p>정보주체는 개인정보침해로 인한 구제를 받기 위하여 개인정보분쟁조정위원회, 한국인터넷진흥원 개인정보침해신고센터 등에 분쟁해결이나 상담 등을 신청할
                                 수 있습니다. 이 밖에 기타 개인정보침해의 신고, 상담에 대하여는 아래의 기관에 문의하시기 바랍니다.</p>
-                            <ul class="subTerms circle">
+                            <ul class="subTerms">
                                 <li>개인정보분쟁조정위원회 : (국번없이) 1833-6972 (www.kopico.go.kr)</li>
                                 <li>개인정보침해신고센터 : (국번없이) 118 (privacy.kisa.or.kr)</li>
                                 <li>대검찰청 : (국번없이) 1301 (www.spo.go.kr)</li>
@@ -1178,14 +1197,17 @@
                         </div>
                         <div class="terms">
                             <h3 class="tit">제13조(개인정보 처리방침 변경)</h3>
-                            <p>① 이 개인정보처리방침은 2022년 1월 1부터 적용됩니다.</p>
-                            <p>② 이전의 개인정보 처리방침은 아래에서 확인하실 수 있습니다.</p>
+                            <p>이 개인정보처리방침은 2022년 8월 1일부터 적용됩니다.</p> <!-- 20220822 수정 ksk -->
                         </div>
                     </div>
                 </div>
                 <!--// 개인정보처리방침 -->
+                <!-- 20220825 내용 수정 ksk -->
             </div>
         </section>
+        <div class="fixed_icon">
+            <span class="ico_scroll_top"><span class="sr_only">상단으로 이동</span></span>
+        </div>
     </main>
 
     <footer class='footer'>
