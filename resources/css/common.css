@@ -443,9 +443,7 @@ main > .title_wrap{
 
 .header.active .logo {
     background: url('../images/logo_bk.png') center center /100% auto no-repeat;
-
 }
-
 
 .header.active .gnb li a {
     color: inherit;
@@ -457,8 +455,6 @@ main > .title_wrap{
     left: 0;
     right: 0;
     bottom: 0;
-    /*visibility: hidden;*/
-    /*opacity: 0;*/
     height: 100vh;
     z-index: 999;
     overflow-y: hidden;
@@ -468,10 +464,7 @@ main > .title_wrap{
     display:none;
 }
 
-
 .mo_header.active {
-    /*visibility: visible;*/
-    /*opacity: 1;*/
     z-index: 100;
     display:block;
 }
@@ -525,7 +518,6 @@ main > .title_wrap{
 }
 
 /* VISUAL */
-
 .mo_header .header_wrap {
     line-height: 100px;
     height: inherit;
@@ -550,7 +542,6 @@ main > .title_wrap{
 .footer .policy_wrap {
     margin-bottom: 30px;
 }
-
 
 .footer .policy_wrap li {
     display: inline-block;
@@ -634,7 +625,6 @@ main > .title_wrap{
         padding: 14px 0;
     }
 
-
     .container {
         padding: 0 30px;
     }
@@ -661,7 +651,6 @@ main > .title_wrap{
     .header .btn_wrap {
         display: block;
     }
-
 
     .header .header_wrap > .gnb {
         display: none;
