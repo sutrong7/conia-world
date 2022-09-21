@@ -28,7 +28,7 @@
 }
 
 .title_wrap.container {
-    padding: 160px 0;
+    padding: 160px 30px;
 }
 
 .title_wrap.container p {
@@ -109,7 +109,7 @@
 .hs .main_con.user_con .con_wrap {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     width: 100%;
 }
 
@@ -120,25 +120,6 @@
 .mc .main_con.merit, .pa .main_con.result, .pa .main_con.merit {
     padding: 200px 0;
     height: auto;
-}
-
-@media screen and (min-width: 1440px) {
-    .main_con {
-        height: calc(100vh - 100px);
-        padding: 0;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-
-}
-
-@media screen and (min-width:768px) and (max-width: 1023px) {
-
-}
-
-@media screen and (max-width:767px){
-
 }
 
 /* SUB : MC */
@@ -180,7 +161,7 @@
     background-position: 72%;
 }
 
-.mc .main_con.experience, .mc .main_con.brand, .mc .main_con.result, .mc .main_con.contact {
+.mc .main_con.experience, .mc .main_con.brand, .mc .main_con.result, .mc .main_con.contact , .mc .main_con.mall {
     text-align: center;
 }
 
@@ -190,7 +171,7 @@
 }
 
 .mc .main_con.login .con_wrap {
-    width: 30%;
+    width: 50%;
 }
 
 .mc .main_con.login .sub_tit {
@@ -292,7 +273,7 @@
 }
 
 .mc .main_con.recommend .con_wrap {
-    width: 40%;
+    width: 50%;
 }
 
 .mc .main_con.recommend .con_wrap .sub_txt {
@@ -437,6 +418,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-end;
+    text-align: left;
 }
 
 .mc .mall .sub_tit {
@@ -478,7 +460,7 @@
     display: none;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1024px) {
     .mc .mall .tab {
         padding-top: 0;
     }
@@ -507,6 +489,9 @@
     .mc .mall .img_mall {
         margin-bottom: 40px;
     }
+}
+
+@media screen and (max-width: 767px) {
 
     .mc .mall .txt_wrap {
         display: block;
@@ -809,7 +794,12 @@
 }
 
 
-@media screen and (max-width: 1440px) {
+@media screen and (min-width: 1440px) {
+    .mc .main_con.merit .con_wrap, .pa .main_con.result .con_wrap, .pa .main_con.merit .con_wrap, .cc .model .con_wrap, .hs .main_con.solution .con_wrap,
+    .hs .main_con.user_con .con_wrap {
+        justify-content: space-between;
+    }
+
     .main_con.policy {
         max-width: 1440px;
         margin: 0 auto;
@@ -919,20 +909,20 @@
     }
 
     .main_con {
-        height: calc(100vh - 60px);
+        min-height: calc(100vh - 60px);
     }
 
 
-    .mc .main_con.merit .title_wrap,
-    .pa .main_con.result .title_wrap,
-    .pa .main_con.merit .title_wrap,
-    .cc .main_con.model .title_wrap {
-        width: 100%;
-    }
+    /*.mc .main_con.merit .title_wrap,*/
+    /*.pa .main_con.result .title_wrap,*/
+    /*.pa .main_con.merit .title_wrap,*/
+    /*.cc .main_con.model .title_wrap {*/
+    /*    width: 100%;*/
+    /*}*/
 
-    .mc .main_con.login .con_wrap, .mc .main_con.recommend .con_wrap {
-        width: 100%;
-    }
+    /*.mc .main_con.login .con_wrap, .mc .main_con.recommend .con_wrap {*/
+    /*    width: 100%;*/
+    /*}*/
 
     .mc .main_con.login .sub_tit {
         padding-bottom: 24px;
@@ -967,9 +957,9 @@
         height: 104px;
     }
 
-    .mc .main_con.merit .title_wrap, .pa .main_con.result .title_wrap, .pa .main_con.merit .title_wra, .cc .main_con .title_wrap, .cc .main_con.model .title_wrap {
-        width: 100%;
-    }
+    /*.mc .main_con.merit .title_wrap, .pa .main_con.result .title_wrap, .pa .main_con.merit .title_wra, .cc .main_con .title_wrap, .cc .main_con.model .title_wrap {*/
+    /*    width: 100%;*/
+    /*}*/
 
     .mc .main_con.merit, .pa .main_con.merit {
         height: auto;
@@ -977,7 +967,7 @@
     }
 
     .mc .main_con.contact, .pa .main_con.contact {
-        height: 882px;
+        /*height: 882px;*/
         /*margin-bottom: 30px;*/
     }
 
@@ -1141,14 +1131,14 @@
         font-size: 32px;
     }
 
-    .pa .main_con .con_wrap .btn {
-        display: block;
-        margin: 0 auto;
-    }
+    /*.pa .main_con .con_wrap .btn {*/
+    /*    display: block;*/
+    /*    margin: 0 auto;*/
+    /*}*/
 
-    .pa .main_con.contact .con_wrap .btn:first-child {
-        margin: 0 0 8px 0;
-    }
+    /*.pa .main_con.contact .con_wrap .btn:first-child {*/
+    /*    margin: 0 0 8px 0;*/
+    /*}*/
 
     .simply-scroll .simply-scroll-list li {
         width: 140px;
@@ -1227,6 +1217,15 @@
         margin-right: 0;
     }
 
+    .pa .main_con .con_wrap .btn {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .pa .main_con.contact .con_wrap .btn:first-child {
+        margin: 0 0 8px 0;
+    }
+
     .policy .tab.pc {
         display: none;
     }
@@ -1234,6 +1233,7 @@
     .policy .tab.mo {
         display: block;
     }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -1441,6 +1441,7 @@
     color: #000;
     height: auto;
     margin-bottom: 240px;
+    min-height: initial;
 }
 
 .cc .partner .main_tit {
@@ -1474,7 +1475,7 @@
     padding: 32px 0;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     .cc .main_con.artist .container {
         width: 100%;
     }
@@ -1638,6 +1639,7 @@
 .hs .bg_con.active {
     width: 1440px;
     height: 450px;
+    min-height: initial;
 }
 
 .hs .bg_con01 {
@@ -1882,19 +1884,58 @@
     }
 }
 
+/*.main_con {*/
+/*    height: auto;*/
+/*    padding: 160px 0;*/
+/*}*/
 
-@media screen and (min-width:1024px) {
-    /* Desktop */
+
+@media screen and (min-width: 1440px) {
+    .main_con {
+        height: calc(100vh - 100px);
+        padding: 0;
+    }
+
+    .mc .main_con.login .con_wrap {
+        width: 30%;
+    }
+
+    .mc .main_con.recommend .con_wrap {
+        width: 40%;
+    }
 }
 
-@media screen and (max-width: 1023px) {
-
-}
-
-@media screen and (min-width:768px) and (max-width: 1023px) {
-    /* Tablet */
-}
 
 @media screen and (max-width:767px){
     /* Mobile */
+    .main_con {
+        height: auto;
+        min-height: calc(100% - 60px);
+    }
+}
+
+
+
+@media screen and (min-width:768px) and (max-width: 1023px) {
+
+}
+
+@media screen and (max-width:767px){
+
+}
+
+
+
+@media screen and (max-width: 767px) {
+
+    .mc .main_con.merit .title_wrap,
+    .pa .main_con.result .title_wrap,
+    .pa .main_con.merit .title_wrap,
+    .cc .main_con.model .title_wrap {
+        width: 100%;
+    }
+
+    .mc .main_con.login .con_wrap, .mc .main_con.recommend .con_wrap {
+        width: 100%;
+    }
 }
