@@ -478,7 +478,7 @@
     display: none;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 767px) {
     .mc .mall .tab {
         padding-top: 0;
     }
@@ -828,7 +828,7 @@
     }
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
 
     .main_txt br {
         display: none !important;
@@ -1474,7 +1474,7 @@
     padding: 32px 0;
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 767px) {
     .cc .main_con.artist .container {
         width: 100%;
     }
@@ -1796,7 +1796,7 @@
     }
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 767px) {
     .hs .title_wrap .main_tit {
         font-size: 30px;
         line-height: 40px;
@@ -1883,3 +1883,18 @@
 }
 
 
+@media screen and (min-width:1024px) {
+    /* Desktop */
+}
+
+@media screen and (max-width: 1023px) {
+
+}
+
+@media screen and (min-width:768px) and (max-width: 1023px) {
+    /* Tablet */
+}
+
+@media screen and (max-width:767px){
+    /* Mobile */
+}

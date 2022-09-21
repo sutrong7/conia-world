@@ -373,7 +373,7 @@
 
     function initSwiper() {
 
-      if (ww < 1020 && newsSwiper == undefined) {
+      if (ww < 768 && newsSwiper == undefined) {
         newsSwiper = new Swiper('.news .swiper-container', {
 
           pagination: {
@@ -391,7 +391,7 @@
           loop: true,
         });
 
-      } else if (ww >= 1020 && newsSwiper != undefined) {
+      } else if (ww >= 768 && newsSwiper != undefined) {
         newsSwiper.destroy();
         newsSwiper = undefined;
       }

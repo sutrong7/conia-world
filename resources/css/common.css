@@ -204,6 +204,7 @@ html.locked, html.locked body {
     max-width: 1440px;
     margin: 0 auto;
     position: relative;
+    padding: 0 30px;
     /*transition:all 0.3s ease-in-out;*/
 }
 
@@ -561,7 +562,7 @@ main > .title_wrap{
 }
 
 .footer .container {
-    padding: 40px 0;
+    padding: 40px 30px;
 }
 
 .footer p {
@@ -591,42 +592,29 @@ main > .title_wrap{
 
 @media screen and (max-width: 1440px) {
     .container{
-        width: 100%;
-        max-width: 100%;
-        padding: 0 60px;
+        padding: 0 30px;
+    }
+
+    .header .header_wrap {
+        line-height: 60px;
+        padding: 0 30px;
+        transition: all .6s;
     }
 
     .footer .container{
-        padding: 40px 60px;
+        padding: 40px 30px;
     }
 }
 
-@media screen and (max-width: 1020px) {
-
-    .main_contents .title {
-        font-size: 24px;
+@media screen and (max-width: 1024px) {
+    .container{
+        width: 100%;
+        max-width: 100%;
+        padding: 0 40px;
     }
 
-    .main_contents .sub_title {
-        font-size: 18px;
-    }
-
-    .main_contents .sm_title {
-        font-size: 14px;
-    }
-
-    .main_contents .sub_txt {
-        font-size: 15px;
-    }
-
-    .btn {
-        max-width: 182px;
-        font-size: 14px;
-        padding: 14px 0;
-    }
-
-    .container {
-        padding: 0 30px;
+    .footer .container{
+        padding: 40px 40px;
     }
 
     .header .header_wrap {
@@ -705,12 +693,38 @@ main > .title_wrap{
         line-height: 56px;
     }
 
+    .main_contents .title {
+        font-size: 24px;
+    }
+
+    .main_contents .sub_title {
+        font-size: 18px;
+    }
+
+    .main_contents .sm_title {
+        font-size: 14px;
+    }
+
+    .main_contents .sub_txt {
+        font-size: 15px;
+    }
+
+    .btn {
+        max-width: 182px;
+        font-size: 14px;
+        padding: 14px 0;
+    }
+
+    .container {
+        padding: 0 30px;
+    }
+
     .sub .main_txt .sub_txt {
         max-width: initial;
     }
 
     .footer .container {
-        padding: 30px 20px;
+        padding: 30px;
     }
 
     .footer .copyright {
@@ -734,5 +748,4 @@ main > .title_wrap{
         height: 52px;
         background-size: 52px auto;
     }
-
 }
