@@ -86,7 +86,7 @@
 
 .main_con {
     height: auto;
-    padding: 160px 0;
+    padding: 160px 60px;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -810,7 +810,7 @@
     }
 
     .main_con .container {
-        padding: 0 60px;
+        /*padding: 0 60px;*/
     }
 
     .mc .main_con.login .con_wrap, .mc .main_con.recommend .con_wrap {
@@ -1290,6 +1290,9 @@
 
 .cc .idea {
     background-image: url('../images/bg_cc01.png');
+    min-height: 60vh;
+    padding: 160px 0;
+    /*height: 100%;*/
 }
 
 .cc .model {
@@ -1343,7 +1346,7 @@
 .cc .artist {
     position: relative;
     height: 2051px;
-    margin: 0 67px;
+    margin: 0 60px;
 }
 
 .cc .artist .container {
@@ -1416,7 +1419,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 1146px;
+    width: 100%;
+    max-width: 1146px;
 }
 
 .cc .artist .title_wrap .sub_tit {
@@ -1475,7 +1479,54 @@
     padding: 32px 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
+    .cc .artist {
+        height: 2051px;
+        margin: 0 30px;
+    }
+
+    .cc .artist .title_wrap .sub_tit {
+        font-size: 100px;
+    }
+
+    .cc .artist .thumb_wrap .thumb {
+        width: 351px;
+        height: 476px;
+        background-size: 351px;
+    }
+
+    .cc .artist .thumb_wrap .t01 {
+        bottom: 510px;
+        left: 0;
+    }
+
+    .cc .artist .thumb_wrap .t02 {
+        top: 255px;
+        left: 0;
+    }
+
+    .cc .artist .thumb_wrap .t03 {
+        bottom: 176px;
+        left: 0;
+    }
+
+    .cc .artist .thumb_wrap .t04 {
+        top: 580px;
+        right: 0;
+    }
+
+    .cc .artist .thumb_wrap .t05 {
+        bottom: 219px;
+        right: 0;
+    }
+
+    .cc .artist .thumb_wrap .t06 {
+        top: 176px;
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
     .cc .main_con.artist .container {
         width: 100%;
     }
@@ -1671,7 +1722,8 @@
 }
 
 .hs .main_con.solution .con_wrap {
-    width: 70%;
+    /*width: 70%;*/
+    max-width: 1024px;
     margin: 0 auto;
 }
 
