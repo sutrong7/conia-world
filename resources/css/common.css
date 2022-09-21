@@ -593,6 +593,7 @@ main > .title_wrap{
 @media screen and (max-width: 1440px) {
     .container{
         padding: 0 30px;
+        width: calc(100% - 60px);
     }
 
     .header .header_wrap {
