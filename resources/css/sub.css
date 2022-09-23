@@ -1849,8 +1849,7 @@
         width: 100%;
     }
 }
-
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1024px) {
     .hs .title_wrap .main_tit {
         font-size: 30px;
         line-height: 40px;
@@ -1862,6 +1861,68 @@
         line-height: 34px;
     }
 
+    .hs .solution .con_wrap .sub_wrap p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .hs .solution,
+    .hs .user_con {
+        padding: 40px 0 80px;
+    }
+
+    .hs .user_con .title_wrap {
+        padding-bottom: 40px;
+    }
+
+    .hs .user_con .con_wrap .card {
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 40px;
+    }
+
+    .hs .user_con .con_wrap .card:last-child {
+        margin-bottom: 0;
+    }
+
+    .hs .user_con .con_wrap .card .ico {
+        margin-bottom: 16px;
+        width: 30px;
+        height: 30px;
+        background-size: 30px;
+    }
+
+    .hs .user_con .con_wrap .card .card_txt .sub_tit {
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 16px;
+    }
+
+    .hs .user_con .con_wrap .card .card_txt p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .hs .main_bg {
+        height: 224px;
+    }
+
+    .hs .solution:last-child {
+        padding: 40px 0 80px;
+    }
+
+    .hs .bg_con {
+        width: 100%;
+        height: 224px;
+    }
+
+    .hs .bg_con.active {
+        width: calc(100% - 60px);
+        height: 186px;
+    }
+}
+
+@media screen and (max-width: 767px) {
     .hs .main_con.solution .con_wrap {
         width: 100%;
     }
