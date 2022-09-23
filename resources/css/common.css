@@ -605,6 +605,18 @@ main > .title_wrap{
     .footer .container{
         padding: 40px 30px;
     }
+
+    .fixed_icon.active {
+        bottom:20px;
+    }
+
+    .fixed_icon .ico_scroll_top {
+        width: 52px;
+        height: 52px;
+        background-size: 52px auto;
+    }
+
+
 }
 
 @media screen and (max-width: 1024px) {
