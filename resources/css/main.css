@@ -160,7 +160,7 @@
     align-items: center;
     text-align: center;
     position: relative;
-    height: calc(100vh - 130px);
+    height: calc(100vh);
 }
 
 .video_wrapper {
@@ -338,11 +338,12 @@
 
 .service .container {
     max-width: 1632px;
+    padding: 0 30px;
 }
 
 .service .con_wrap {
     display: flex;
-    /*padding: 0 20px;*/
+    padding: 0 30px;
     /*flex-wrap: wrap;*/
     justify-content: center;
 }
@@ -389,6 +390,11 @@
     font-weight: 700;
 }
 
+@media screen and (max-width: 1440px) {
+      .service .card .card_txt {
+        padding: 26px 10px 0;
+    }
+}
 @media screen and (max-width: 1024px) {
     .service .card .card_txt {
         padding: 30px 10px 0;
@@ -396,6 +402,10 @@
 }
 
 @media screen and (max-width: 768px) {
+    .service .container {
+        padding: 0 40px;
+    }
+
     .service .con_wrap {
         display: flex;
         flex-wrap: wrap;
