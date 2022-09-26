@@ -122,7 +122,15 @@
     height: auto;
 }
 
+@media screen and (max-width:1440px) {
+    .title_wrap.container {
+        max-width: initial;
+    }
+}
+
 @media screen and (min-width:1024px) and (max-width:1440px) {
+
+
     .sub .main_tit {
         font-size: 3.375rem;
     }
@@ -145,7 +153,7 @@
 }
 
 
-@media screen and (max-width:767px){
+@media screen and (max-width:768px){
     /* Mobile */
     .main_con {
         height: auto;
@@ -852,7 +860,7 @@
     }
 
     .title_wrap.container {
-        padding: 160px 60px;
+        padding: 160px 30px;
     }
 
     .main_con .container {
@@ -1249,7 +1257,7 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .main_con.contact .contact_wrap ul {
         max-width: 500px;
     }
@@ -2077,28 +2085,7 @@
     }
 }
 
-/*.main_con {*/
-/*    height: auto;*/
-/*    padding: 160px 0;*/
-/*}*/
-
-
-
-
-
-
-@media screen and (min-width:768px) and (max-width: 1023px) {
-
-}
-
-@media screen and (max-width:767px){
-
-}
-
-
-
 @media screen and (max-width: 767px) {
-
     .mc .main_con.merit .title_wrap,
     .pa .main_con.result .title_wrap,
     .pa .main_con.merit .title_wrap,

@@ -236,7 +236,7 @@ const onClickBtnNext = () => {
                 itemsHtml += '     </label>';
                 itemsHtml += '</div>';
             });
-            $('.step3').append(itemsHtml);
+            $('.step3 .item_wrap').append(itemsHtml);
             break;
         case 3:
             const checkedItems = $('input[name="ref_item"]');

@@ -198,6 +198,15 @@
     border: 1px solid #EBECEE;
 }
 
+.form .item_wrap {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    height: 100%;
+    min-height: 540px;
+    justify-content: center;
+}
+
 .form [class*='_item'] {
     position: relative;
     border-radius: 4px;
@@ -220,6 +229,7 @@
 .form .form_wrap {
     padding: 80px 30px;
     max-width: 620px;
+    min-height: 700px;
     margin: 0 auto;
 }
 
@@ -499,9 +509,8 @@
 /*// MODAL : 상담 신청 */
 
 @media screen and (max-width: 1024px) {
-
     .modal {
-        padding: 30px 0 60px;
+        padding: 30px 0 50px;
     }
 
     .modal label, input, p, em {
@@ -643,6 +652,14 @@
         height: auto;
         line-height: initial;
         padding: 20px;
+    }
+
+    .form .form_wrap {
+        min-height: initial;
+    }
+
+    .form .form_wrap .item_wrap {
+        min-height: initial;
     }
 
     .form .txt_item input[type=text] {
