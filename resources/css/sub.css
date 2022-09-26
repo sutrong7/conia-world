@@ -62,28 +62,6 @@
     color: #ffffff;
 }
 
-.main_con .con_wrap .btn {
-    padding: 28px 0;
-    min-width: 280px;
-}
-
-.main_con .sub_tit span, .main_con .number span {
-    font-weight: inherit;
-    font-size: 1.25rem;
-}
-
-.main_con .circle, .main_con .result_wrap .circle p, .main_con .circle strong, .main_con .result_wrap .number, .main_con .zero, .pa .main_con .result_wrap .number strong, .pa .main_con .result_wrap .number .counter {
-    font-weight: 700;
-}
-
-.main_con .con_wrap .circle {
-    text-align: center;
-}
-
-.main_con .result_wrap .number {
-    line-height: initial;
-}
-
 .main_con {
     height: auto;
     padding: 160px 0;
@@ -105,6 +83,28 @@
     justify-content: center;
 }
 
+.main_con .con_wrap .btn {
+    padding: 28px 0;
+    min-width: 280px;
+}
+
+.main_con .sub_tit span, .main_con .number span {
+    font-weight: inherit;
+    font-size: 1.25rem;
+}
+
+.main_con .circle, .main_con .result_wrap .circle p, .main_con .circle strong, .main_con .result_wrap .number, .main_con .zero, .pa .main_con .result_wrap .number strong, .pa .main_con .result_wrap .number .counter {
+    font-weight: 700;
+}
+
+/*.main_con .con_wrap .circle {*/
+/*    text-align: center;*/
+/*}*/
+
+.main_con .result_wrap .number {
+    line-height: initial;
+}
+
 .mc .main_con.merit .con_wrap, .pa .main_con.result .con_wrap, .pa .main_con.merit .con_wrap, .cc .model .con_wrap, .hs .main_con.solution .con_wrap,
 .hs .main_con.user_con .con_wrap {
     display: flex;
@@ -122,6 +122,11 @@
     height: auto;
 }
 
+.main_con .circle {
+    vertical-align: middle;
+    border-radius: 50%;
+}
+
 @media screen and (max-width:1440px) {
     .title_wrap.container {
         max-width: initial;
@@ -129,8 +134,6 @@
 }
 
 @media screen and (min-width:1024px) and (max-width:1440px) {
-
-
     .sub .main_tit {
         font-size: 3.375rem;
     }
@@ -153,7 +156,7 @@
 }
 
 
-@media screen and (max-width:768px){
+@media screen and (max-width:767px){
     /* Mobile */
     .main_con {
         height: auto;
@@ -162,7 +165,9 @@
     }
 }
 
-/* SUB : MC */
+/* SUB 1 ::: MC */
+
+/* MC : LOGIN */
 .mc .main_con.login {
     background-image: url('../images/bg_mc01.png');
     background-position: 22%;
@@ -201,22 +206,26 @@
     background-position: 72%;
 }
 
-.mc .main_con.experience, .mc .main_con.brand, .mc .main_con.result, .mc .main_con.contact , .mc .main_con.mall {
+.mc .experience, .mc .brand, .mc .result, .mc .contact , .mc .mall {
     text-align: center;
 }
 
-.mc .main_con.login .container, .mc .main_con.recommend .container {
+.mc .login .container, .mc .recommend .container {
     width: 100%;
     justify-content: flex-end;
 }
 
-.mc .main_con.login .con_wrap {
+.mc .login .con_wrap {
     width: 50%;
 }
 
-.mc .main_con.login .sub_tit {
+.mc .login .sub_tit {
     padding-bottom: 54px;
 }
+
+/*// MC : LOGIN */
+
+/* MC : EXPERIENCE */
 
 .mc .main_con .info_wrap {
     padding-top: 56px;
@@ -261,99 +270,124 @@
     margin-left: 20px;
 }
 
-.main_con .merit_wrap li {
+/*// MC : EXPERIENCE */
+
+/* MC : MERIT */
+
+.merit .merit_wrap li {
     padding: 60px 0;
     border-bottom: 1px solid rgba(239, 239, 240, 0.2);
 }
 
-.main_con .merit_wrap li:first-child {
+.merit .merit_wrap li:first-child {
     padding-top: 0;
 }
 
-.main_con .merit_wrap li:last-child {
+.merit .merit_wrap li:last-child {
     border: none;
     padding-bottom: 0;
 }
 
-.main_con .merit_wrap li .txt_wrap {
+.merit .merit_wrap li .txt_wrap {
     display: inline-block;
     vertical-align: middle;
 }
 
-.main_con .merit_wrap li .sub_tit {
+.merit .merit_wrap li .sub_tit {
     padding-bottom: 24px;
 }
 
-.main_con .merit_wrap .ico {
+.merit .merit_wrap .ico {
     width: 60px;
     height: 60px;
     vertical-align: middle;
     margin: 0 80px 0 30px;
 }
 
-.main_con .merit_wrap .ico_money {
-    background-image: url('../images/ico_money.png');
-}
-
-.main_con .merit_wrap .ico_cs {
+.merit .merit_wrap .ico_cs {
     background-image: url('../images/ico_cs.png');
 }
 
-.mc .main_con .merit_wrap .ico_stock {
+.merit .merit_wrap .ico_money {
+    background-image: url('../images/ico_money.png');
+}
+
+.mc .merit .merit_wrap .ico_stock {
     background-image: url('../images/ico_stock.png');
 }
 
-.mc .main_con .merit_wrap .ico_marketing {
+.mc .merit .merit_wrap .ico_marketing {
     background-image: url('../images/ico_marketing.png');
 }
 
-.circle {
-    vertical-align: middle;
-    border-radius: 50%;
+@media screen and (min-width:1024px) and (max-width:1440px) {
+    .title_wrap h1.main_tit, .main_con .number {
+        font-size: 4rem;
+    }
+
+    .main_con .merit_wrap li {
+        padding: 50px 0;
+    }
+    .main_con .merit_wrap .ico {
+        margin: 0 50px 0 30px;
+    }
 }
 
-.mc .main_con.recommend .con_wrap {
+/*// MC : MERIT */
+
+/* MC : RECOMMEND */
+
+.mc .recommend .con_wrap {
     width: 50%;
 }
 
-.mc .main_con.recommend .con_wrap .sub_txt {
+.mc .recommend .con_wrap .sub_txt {
     margin-bottom: 20px;
     display: block;
 }
 
-.mc .main_con.recommend .con_wrap .sub_txt:last-child {
+.mc .recommend .con_wrap .sub_txt:last-child {
     margin-bottom: 0;
 }
 
-.mc .main_con.brand .container {
+/*// MC : RECOMMEND */
+
+/* MC : BRAND */
+
+.mc .brand .container {
     max-width: initial;
     justify-content: center;
     padding: 0;
 }
 
-.mc .main_con.brand .con_wrap {
+.mc .brand .con_wrap {
     overflow: hidden;
 }
 
-.mc .main_con.brand .con_wrap .brand_wrap {
+.mc .brand .con_wrap .brand_wrap {
     padding-top: 120px;
 }
 
-.mc .main_con.brand .simply-scroll, .mc .main_con.brand .simply-scroll .simply-scroll-clip {
+.mc .brand .simply-scroll, .mc .brand .simply-scroll .simply-scroll-clip {
     width: 100%;
     height: 120px;
 }
 
-.mc .main_con.brand .brand_wrap img {
+.mc .brand .brand_wrap img {
     width: 260px;
     height: auto;
 }
 
-.main_con .contact_wrap .circle, .main_con .result_wrap .circle {
+/*// MC : BRAND */
+
+
+/* MC : RESULT */
+
+.circle {
     border: 1px solid #ffffff;
 }
 
-.main_con .result_wrap ul, .main_con .contact_wrap ul, .main_con .mall_wrap ul {
+.result ul, .contact ul, .mall ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -412,6 +446,10 @@
     font-weight: inherit;
     padding-top: 3px;
 }
+
+/*// MC : RESULT */
+
+/* MC : MALL */
 
 .mc .mall {
     color: #222222;
@@ -501,19 +539,6 @@
     display: none;
 }
 
-@media screen and (min-width:1024px) and (max-width:1440px) {
-    .title_wrap h1.main_tit, .main_con .number {
-        font-size: 4rem;
-    }
-
-    .main_con .merit_wrap li {
-        padding: 50px 0;
-    }
-    .main_con .merit_wrap .ico {
-        margin: 0 50px 0 30px;
-    }
-}
-
 @media screen and (max-width: 1024px) {
     .mc .mall .tab {
         padding-top: 0;
@@ -569,78 +594,85 @@
     }
 }
 
-/* SUB : PA */
+/*// MC : MALL */
 
-.pa .main_con.result {
+/*// SUB 1 ::: MC */
+
+
+/* SUB 2 : PA */
+
+.pa .result {
     background-image: url('../images/bg_pa01.png');
     background-position: 55%;
     /*height: 1526px;*/
     /*padding: 80px 0;*/
 }
 
-.pa .main_con.result .con_wrap {
+.pa .result .con_wrap {
     flex-direction: row-reverse;
 }
 
-.pa .main_con.result .title_wrap {
+.pa .result .title_wrap {
     width: 100%;
 }
 
-.pa .main_con.merit {
+.pa .merit {
     background-image: url('../images/bg_pa02.png');
     background-position: 23%;
     /*height: 1287px;*/
 }
 
-.pa .main_con.contact {
+.pa .contact {
     background-image: url('../images/bg_contact.png');
     background-position: 72%;
     text-align: center;
 }
 
-.pa .main_con.result .result_wrap {
+.pa .result .result_wrap {
     width: 40%;
     min-width: 670px;
 }
 
-.pa .main_con.result .result_wrap ul {
+.pa .result .result_wrap ul {
     display: block;
 }
 
-.pa .main_con.result .result_wrap ul li {
+.pa .result .result_wrap ul li {
     text-align: left;
 }
 
-.pa .main_con.result .result_wrap p {
+.pa .result .result_wrap p {
     padding-bottom: 7px;
 }
 
-.pa .main_con.result .result_wrap .number {
+.pa .result .result_wrap .number {
     padding-bottom: 38px;
     text-align: left;
     transition: all .4s ease-in-out;
     white-space: nowrap;
 }
 
-.pa .main_con.result .result_wrap .number span {
+.pa .result .result_wrap .number span {
     padding-left: 12px;
 }
 
-.pa .main_con.result .result_wrap ul li:last-child .number {
+.pa .result .result_wrap ul li:last-child .number {
     padding-bottom: 0;
 }
 
-.pa .main_con.merit .merit_wrap .ico_search {
+.pa .merit .merit_wrap .ico_search {
     background-image: url('../images/ico_stock.png');
 }
 
-.pa .main_con.merit .merit_wrap .ico_tv {
+.pa .merit .merit_wrap .ico_tv {
     background-image: url('../images/ico_tv.png');
 }
 
-.pa .main_con.contact .con_wrap .btn:first-child {
+.pa .contact .con_wrap .btn:first-child {
     margin-right: 16px;
 }
+
+/*// SUB 2 : PA */
 
 /* SUB : USE , POLICY */
 
