@@ -95,13 +95,10 @@
     font-size: 1.25rem;
 }
 
-.main_con .circle, .main_con .result_wrap .circle p, .main_con .circle strong, .main_con .result_wrap .number, .main_con .zero, .pa .main_con .result_wrap .number strong, .pa .main_con .result_wrap .number .counter {
+.main_con .btn, .main_con .circle, .main_con .circle p, .main_con .circle strong, .main_con .number, .main_con .zero, .counter {
     font-weight: 700;
+    line-height: inherit;
 }
-
-/*.main_con .con_wrap .circle {*/
-/*    text-align: center;*/
-/*}*/
 
 .main_con .result_wrap .number {
     line-height: initial;
@@ -117,27 +114,18 @@
     width: 50%;
 }
 
-.mc .main_con.merit, .pa .main_con.result, .pa .main_con.merit {
-    /*padding: 160px 0;*/
-    height: auto;
-}
-
 .main_con .circle {
     vertical-align: middle;
     border-radius: 50%;
+    border: 1px solid #ffffff;
 }
 
 .mc .experience, .mc .brand, .mc .result, .mc .contact, .mc .mall {
     text-align: center;
 }
 
-.circle {
-    border: 1px solid #ffffff;
-}
-
-.main_con .con_wrap .btn, .main_con .circle, .main_con .result_wrap .circle p, .main_con .circle strong, .main_con .result_wrap .number, .main_con .zero, .counter {
-    font-weight: 700;
-    line-height: inherit;
+.merit, .seller {
+    height: auto;
 }
 
 @media screen and (min-width: 1440px) {
@@ -200,10 +188,6 @@
         font-size: 16px;
     }
 
-    .title_wrap.container p {
-        padding-left: 1px;
-    }
-
     .title_wrap.container {
         padding: 40px 30px 80px;
     }
@@ -245,8 +229,6 @@
         font-weight: inherit;
         font-size: 1.25rem;
     }
-
-
 
     .main_con .con_wrap .circle {
         text-align: center;
@@ -370,9 +352,6 @@
 }
 
 @media screen and (max-width: 1024px) {
-    /*.experience {*/
-    /*    padding: 80px 0;*/
-    /*}*/
     .experience .experience_wrap {
         padding-top: 40px;
     }
@@ -1096,7 +1075,7 @@
 
 /*// SUB 2 : PA */
 
-/* SUB : CC */
+/* SUB 3 : CC */
 .cc {
     padding-bottom: 0;
 }
@@ -1503,8 +1482,9 @@
         transition-duration: 1s;
     }
 }
+/*// SUB 3 : CC */
 
-/* SUB : HS */
+/* SUB 4 : HS */
 .hs .title_wrap .main_tit {
     font-size: 3.75rem;
     line-height: 80px;
@@ -1833,6 +1813,8 @@
     }
 }
 
+/*// SUB 4 : HS */
+
 /* SUB : USE, POLICY */
 
 .policy {
@@ -2067,3 +2049,5 @@
         display: block;
     }
 }
+
+/* SUB : USE, POLICY */
